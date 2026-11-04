@@ -3,38 +3,53 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta name="robots" content="noindex">
 <title>家計と制度のメモ</title>
+
 <link rel="icon" type="image/png" sizes="192x192" href="/brand/icon-192.png">
 <link rel="apple-touch-icon" href="/brand/icon-512.png">
 <style>
-:root { --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --card: #FFFFFF; --accent: #2F6FED; --line: #E6E4DE; }
+:root { --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --card: #FFFFFF; --accent: #2F6FED; --accent-soft: #E6EEFD; --line: #E6E4DE; --maxw: 520px; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-main { max-width: 520px; margin: 0 auto; padding: 32px 16px 48px; }
-h1 { font-size: 24px; margin: 0 0 6px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; }
+main { max-width: var(--maxw); margin: 0 auto; padding: 24px 16px 48px; }
+a { color: var(--accent); }
+h1 { font-size: 24px; line-height: 1.4; margin: 0 0 6px; }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand img { width: 48px; height: 48px; border-radius: 50%; flex: none; }
 .tagline { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
-h2 { font-size: 14px; letter-spacing: .08em; color: var(--muted); margin: 28px 0 10px; text-transform: uppercase; }
-ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.sec-h { font-size: 14px; letter-spacing: .08em; color: var(--muted); margin: 28px 0 10px; text-transform: uppercase; }
+ul.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 a.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; min-height: 64px; text-decoration: none; color: inherit; }
 a.card:active { background: #F2F6FF; }
 a.card .label { font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-a.card .label::after { content: "→"; color: var(--accent); font-weight: 700; }
+a.card .label::after { content: "→"; color: var(--accent); font-weight: 700; flex: none; }
 a.card .note { color: var(--muted); font-size: 14px; margin-top: 4px; }
-.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid var(--muted); color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; }
+.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid var(--muted); color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; line-height: 1.6; }
+.type { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 10px; vertical-align: middle; }
+.type-sonsuru { color: #D9453D; background: #FBE9E7; }
+.type-hikaku { color: #1F9D6A; background: #E3F5EC; }
+.meta { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.topnav { font-size: 14px; margin: 0 0 20px; display: flex; align-items: center; gap: 8px; }
+.topnav a { color: var(--ink); text-decoration: none; font-weight: 700; }
+.topnav img { width: 28px; height: 28px; border-radius: 50%; }
+.more { display: block; text-align: center; font-weight: 700; margin-top: 12px; }
 footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+footer nav { margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; }
+footer nav a { color: var(--muted); }
+
 </style>
 </head>
 <body>
 <main>
+
   <div class="brand"><img src="/brand/icon-192.png" alt="" width="48" height="48"><h1>家計と制度のメモ</h1></div>
   <p class="tagline">新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく</p>
   
   
-  <h2>口座開設の手順（常設）</h2>
-  <ul>
+  <h2 class="sec-h">口座開設の手順（常設）</h2>
+  <ul class="cards">
     
     <li><a class="card" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank">
       <div class="label"><span><span class="pr">PR</span>証券口座を開く（松井証券）</span></div>
@@ -45,8 +60,8 @@ footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px
   
   
   
-  <h2>補助線</h2>
-  <ul>
+  <h2 class="sec-h">補助線</h2>
+  <ul class="cards">
     
     <li><a class="card" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+EI56B6+3XCC+BXIYQ" rel="nofollow sponsored noopener" target="_blank">
       <div class="label"><span><span class="pr">PR</span>iDeCo の申込を Web で始める</span></div>
@@ -57,8 +72,8 @@ footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px
   
   
   
-  <h2>今の季節枠（11〜12 月）</h2>
-  <ul>
+  <h2 class="sec-h">今の季節枠（11〜12 月）</h2>
+  <ul class="cards">
     
     <li><a class="card" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+EPADKI+54OC+5YJRM" rel="nofollow sponsored noopener" target="_blank">
       <div class="label"><span><span class="pr">PR</span>ふるさと納税を始める</span></div>
@@ -73,7 +88,43 @@ footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px
   </ul>
   
   
-  <footer>当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。<br>最終更新: 2026-11-04</footer>
+  
+  <h2 class="sec-h">最新の記事</h2>
+  <ul class="cards">
+    
+    <li><a class="card" href="/posts/2026-11-04-furusato-nenmatsu-chosei/">
+      <div class="label"><span>ふるさと納税、年末調整では控除されません</span></div>
+      <div class="note"><span class="type type-sonsuru">知らないと損</span> <time datetime="2026-11-04T19:30:00+09:00">2026年11月4日</time></div>
+    </a></li>
+    
+    <li><a class="card" href="/posts/2026-11-04-furusato-jogen-gensen/">
+      <div class="label"><span>控除上限額の確認に必要な 3 つの数字</span></div>
+      <div class="note"><span class="type type-tejun">手続き</span> <time datetime="2026-11-04T19:30:00+09:00">2026年11月4日</time></div>
+    </a></li>
+    
+    <li><a class="card" href="/posts/2026-11-03-nisa-kouza-5steps/">
+      <div class="label"><span>新NISA、口座を開くまでの 5 ステップ</span></div>
+      <div class="note"><span class="type type-tejun">手続き</span> <time datetime="2026-11-03T12:30:00+09:00">2026年11月3日</time></div>
+    </a></li>
+    
+    <li><a class="card" href="/posts/2026-11-03-furusato-5steps/">
+      <div class="label"><span>ふるさと納税、12/31 までの 5 ステップ</span></div>
+      <div class="note"><span class="type type-tejun">手続き</span> <time datetime="2026-11-03T07:30:00+09:00">2026年11月3日</time></div>
+    </a></li>
+    
+    <li><a class="card" href="/posts/2026-11-02-nencho-2026-henkou4/">
+      <div class="label"><span>2026 年分の年末調整、変わった 4 つ</span></div>
+      <div class="note"><span class="type type-sonsuru">知らないと損</span> <time datetime="2026-11-02T19:30:00+09:00">2026年11月2日</time></div>
+    </a></li>
+    
+  </ul>
+  <a class="more" href="/posts/">記事一覧（5 件）→</a>
+  
+
+<footer>
+  当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。<br>最終更新: 2026-11-04
+  <nav><a href="/">リンク集</a><a href="/posts/">記事一覧</a><a href="/about/">運営者情報</a></nav>
+</footer>
 </main>
 </body>
 </html>

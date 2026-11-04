@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /previews/
+Sitemap: https://kakei-seido.com/sitemap.xml
