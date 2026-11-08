@@ -17,142 +17,405 @@
 <meta property="og:image:height" content="1350">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-11-05T12:30:00+09:00">
+<meta property="article:section" content="新NISA・証券口座">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="つみたて投資枠と成長投資枠、何が違う？">
 <meta name="twitter:description" content="新NISA は 2 つの枠を同時に使えます。違いは「年間枠・対象商品・買い方」の 3 点">
 <meta name="twitter:image" content="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/01.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2"}, "dateModified": "2026-11-05T12:30:00+09:00", "datePublished": "2026-11-05T12:30:00+09:00", "description": "\u65b0NISA \u306f 2 \u3064\u306e\u67a0\u3092\u540c\u6642\u306b\u4f7f\u3048\u307e\u3059\u3002\u9055\u3044\u306f\u300c\u5e74\u9593\u67a0\u30fb\u5bfe\u8c61\u5546\u54c1\u30fb\u8cb7\u3044\u65b9\u300d\u306e 3 \u70b9", "headline": "\u3064\u307f\u305f\u3066\u6295\u8cc7\u67a0\u3068\u6210\u9577\u6295\u8cc7\u67a0\u3001\u4f55\u304c\u9055\u3046\uff1f", "image": ["https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/01.png"], "mainEntityOfPage": "https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/", "publisher": {"@type": "Organization", "name": "\u682a\u5f0f\u4f1a\u793eB"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "articleSection": "\u65b0NISA\u30fb\u8a3c\u5238\u53e3\u5ea7", "author": {"@type": "Organization", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "url": "https://kakei-seido.com/about/"}, "dateModified": "2026-11-05T12:30:00+09:00", "datePublished": "2026-11-05T12:30:00+09:00", "description": "\u65b0NISA \u306f 2 \u3064\u306e\u67a0\u3092\u540c\u6642\u306b\u4f7f\u3048\u307e\u3059\u3002\u9055\u3044\u306f\u300c\u5e74\u9593\u67a0\u30fb\u5bfe\u8c61\u5546\u54c1\u30fb\u8cb7\u3044\u65b9\u300d\u306e 3 \u70b9", "headline": "\u3064\u307f\u305f\u3066\u6295\u8cc7\u67a0\u3068\u6210\u9577\u6295\u8cc7\u67a0\u3001\u4f55\u304c\u9055\u3046\uff1f", "image": ["https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/01.png"], "mainEntityOfPage": "https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/", "publisher": {"@type": "Organization", "logo": {"@type": "ImageObject", "url": "https://kakei-seido.com/brand/icon-512.png"}, "name": "\u682a\u5f0f\u4f1a\u793eB"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://kakei-seido.com/posts/", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "position": 1}, {"@type": "ListItem", "item": "https://kakei-seido.com/topics/nisa/", "name": "\u65b0NISA\u30fb\u8a3c\u5238\u53e3\u5ea7", "position": 2}, {"@type": "ListItem", "item": "https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/", "name": "\u3064\u307f\u305f\u3066\u6295\u8cc7\u67a0\u3068\u6210\u9577\u6295\u8cc7\u67a0\u3001\u4f55\u304c\u9055\u3046\uff1f", "position": 3}]}</script>
 
+<meta name="theme-color" content="#FBFAF7">
 <link rel="icon" type="image/png" sizes="192x192" href="/brand/icon-192.png">
 <link rel="apple-touch-icon" href="/brand/icon-512.png">
 <style>
-:root { --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --card: #FFFFFF; --accent: #2F6FED; --accent-soft: #E6EEFD; --line: #E6E4DE; --maxw: 640px; }
+:root {
+  --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --faint: #8A929C; --card: #FFFFFF;
+  --accent: #2F6FED; --accent-ink: #1F4FB8; --accent-soft: #E9F0FE; --line: #E6E4DE; --line-soft: #F0EEE8;
+  --warn: #D9453D; --warn-soft: #FBE9E7; --ok: #1F9D6A; --ok-soft: #E3F5EC;
+  --radius: 14px; --shadow: 0 1px 2px rgba(27,31,36,.04), 0 6px 20px -12px rgba(27,31,36,.18);
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; }
-main { max-width: var(--maxw); margin: 0 auto; padding: 24px 16px 48px; }
-a { color: var(--accent); }
-h1 { font-size: 24px; line-height: 1.4; margin: 0 0 6px; }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand img { width: 48px; height: 48px; border-radius: 50%; flex: none; }
-.tagline { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
-.sec-h { font-size: 14px; letter-spacing: .08em; color: var(--muted); margin: 28px 0 10px; text-transform: uppercase; }
-ul.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-a.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; min-height: 64px; text-decoration: none; color: inherit; }
-a.card:active { background: #F2F6FF; }
-a.card .label { font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-a.card .label::after { content: "→"; color: var(--accent); font-weight: 700; flex: none; }
-a.card .note { color: var(--muted); font-size: 14px; margin-top: 4px; }
-.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid var(--muted); color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; line-height: 1.6; }
-.type { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 10px; vertical-align: middle; }
-.type-sonsuru { color: #D9453D; background: #FBE9E7; }
-.type-hikaku { color: #1F9D6A; background: #E3F5EC; }
-.meta { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.topnav { font-size: 14px; margin: 0 0 20px; display: flex; align-items: center; gap: 8px; }
-.topnav a { color: var(--ink); text-decoration: none; font-weight: 700; }
-.topnav img { width: 28px; height: 28px; border-radius: 50%; }
-.more { display: block; text-align: center; font-weight: 700; margin-top: 12px; }
-footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
-footer nav { margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; }
-footer nav a { color: var(--muted); }
+html { scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", sans-serif; line-height: 1.8; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; font-feature-settings: "palt"; }
+a { color: var(--accent-ink); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-.pr-note { font-size: 13px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 16px; }
-article h1 { font-size: 26px; margin: 10px 0 12px; }
-.lead { font-size: 17px; color: var(--muted); margin: 0 0 20px; }
-article img { display: block; width: 100%; max-width: 420px; height: auto; margin: 16px auto 0; border-radius: 14px; border: 1px solid var(--line); background: var(--card); }
-article section { margin: 32px 0 0; }
-article h2 { font-size: 20px; line-height: 1.45; margin: 0 0 8px; padding-left: 12px; border-left: 4px solid var(--accent); }
-article section p { margin: 0; font-size: 16px; }
-.cta { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px 22px; }
-.cta .button { display: block; margin: 0; background: var(--accent); color: #fff; text-decoration: none; text-align: center; font-weight: 800; font-size: 17px; border-radius: 14px; padding: 16px 18px; }
-.cta .button:active { opacity: .9; }
-.cta .later { margin: 0; color: var(--muted); font-size: 15px; }
-.cta .fine { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+/* ヘッダー */
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(251,250,247,.92); backdrop-filter: saturate(1.3) blur(8px); -webkit-backdrop-filter: saturate(1.3) blur(8px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 17px; letter-spacing: .01em; flex: none; }
+.logo img { width: 30px; height: 30px; border-radius: 50%; }
+.gnav { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.gnav::-webkit-scrollbar { display: none; }
+.gnav a { white-space: nowrap; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 700; padding: 6px 10px; border-radius: 999px; }
+.gnav a:hover, .gnav a.on { color: var(--accent-ink); background: var(--accent-soft); }
+@media (max-width: 640px) {
+  .site-header .wrap { height: auto; flex-wrap: wrap; padding-bottom: 8px; gap: 6px 16px; }
+  .logo { height: 48px; }
+  .gnav { margin-left: -16px; margin-right: -16px; padding: 0 16px; width: calc(100% + 32px); }
+}
+
+/* レイアウト */
+main.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 20px 0 56px; }
+@media (min-width: 1024px) { main.layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; padding-top: 28px; } }
+main.narrow { max-width: 720px; }
+.sidebar { display: grid; gap: 20px; align-content: start; }
+@media (min-width: 1024px) { .sidebar { position: sticky; top: 76px; } }
+
+/* 共通パーツ */
+.crumbs { font-size: 13px; color: var(--muted); margin: 0 0 14px; display: flex; gap: 6px; flex-wrap: wrap; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent-ink); }
+.crumbs li { list-style: none; }
+.crumbs ol { display: contents; margin: 0; padding: 0; }
+.crumbs li + li::before { content: "›"; color: var(--faint); margin-right: 6px; }
+.chip { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; line-height: 1.6; text-decoration: none; }
+.chip.type-sonsuru { color: var(--warn); background: var(--warn-soft); }
+.chip.type-hikaku { color: var(--ok); background: var(--ok-soft); }
+.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid currentColor; color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; line-height: 1.6; }
+.meta { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px; }
+.box h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: .06em; color: var(--muted); }
+.sec-title { font-size: 20px; margin: 0 0 12px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.sec-title a { font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+/* 記事カード */
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
+.post-card { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; color: inherit; text-decoration: none; box-shadow: var(--shadow); transition: transform .12s ease, border-color .12s ease; }
+.post-card:hover { border-color: #CFD8EA; transform: translateY(-1px); }
+.post-card .thumb { aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; background: var(--line-soft); }
+.post-card .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.post-card .title { font-weight: 800; font-size: 16px; line-height: 1.5; margin: 6px 0 6px; }
+.post-card .excerpt { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.post-card .meta { margin-top: 8px; font-size: 12px; }
+.post-card.lg { grid-template-columns: 132px minmax(0, 1fr); padding: 14px; }
+.post-card.lg .title { font-size: 19px; }
+.post-card.lg .excerpt { -webkit-line-clamp: 3; font-size: 14px; }
+@media (min-width: 560px) { .post-card.lg { grid-template-columns: 200px minmax(0, 1fr); gap: 20px; padding: 16px; } .post-card.lg .title { font-size: 22px; } }
+
+/* 小さなリスト（サイドバー・関連） */
+.mini { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.mini a { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; color: inherit; text-decoration: none; align-items: start; }
+.mini .thumb { aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: var(--line-soft); }
+.mini .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mini .title { font-weight: 700; font-size: 14px; line-height: 1.5; }
+.mini .meta { font-size: 12px; margin-top: 2px; }
+.mini a:hover .title { color: var(--accent-ink); }
+.taglist { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.taglist a { display: inline-block; font-size: 13px; font-weight: 700; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; text-decoration: none; }
+.taglist a:hover, .taglist a.on { border-color: var(--accent); color: var(--accent-ink); background: var(--accent-soft); }
+.taglist .n { color: var(--faint); font-weight: 600; margin-left: 4px; }
+
+/* CTA */
+.cta-box { background: linear-gradient(180deg, #FFFFFF, #F4F7FE); border: 1px solid #D6E0F5; border-radius: var(--radius); padding: 20px 18px 18px; }
+.cta-box .kicker { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .06em; color: var(--accent-ink); }
+.cta-box p { margin: 0 0 12px; font-size: 15px; }
+.button { display: block; background: var(--accent); color: #fff; text-decoration: none; text-align: center; font-weight: 800; font-size: 16px; border-radius: 12px; padding: 14px 16px; box-shadow: 0 6px 16px -8px rgba(47,111,237,.6); }
+.button:hover { background: var(--accent-ink); }
+.button .pr { color: #fff; }
+.fine { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.later { margin: 0; color: var(--muted); font-size: 14px; }
+
+/* フッター */
+.site-footer { border-top: 1px solid var(--line); background: #F5F3EE; color: var(--muted); font-size: 13px; margin-top: 24px; }
+.site-footer .wrap { padding: 28px 16px 36px; display: grid; gap: 24px; }
+@media (min-width: 720px) { .site-footer .wrap { grid-template-columns: 1.4fr 1fr 1fr; } }
+.site-footer h4 { margin: 0 0 8px; font-size: 13px; color: var(--ink); }
+.site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--accent-ink); }
+.site-footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; font-size: 12px; color: var(--faint); }
+
+article.post { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 18px 26px; box-shadow: var(--shadow); }
+@media (min-width: 720px) { article.post { padding: 32px 36px 36px; } }
+.post-head h1 { font-size: 25px; line-height: 1.45; margin: 10px 0 12px; letter-spacing: .01em; }
+@media (min-width: 720px) { .post-head h1 { font-size: 30px; } }
+.post-head .lead { font-size: 16px; color: var(--muted); margin: 0 0 18px; line-height: 1.8; }
+.post-head .meta time { color: var(--muted); }
+.pr-note { font-size: 12px; color: var(--muted); margin: 0; }
+.hero-img { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; margin: 0 0 22px; align-items: start; }
+@media (min-width: 560px) { .hero-img { grid-template-columns: 200px minmax(0, 1fr); } }
+.hero-img img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
+.toc { background: #F7F6F2; border-radius: 12px; padding: 14px 16px; }
+.toc h2 { font-size: 14px; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; }
+.toc ol { margin: 0; padding-left: 22px; font-size: 14px; display: grid; gap: 4px; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--accent-ink); text-decoration: underline; }
+.body section { margin: 32px 0 0; scroll-margin-top: 80px; }
+.body h2 { font-size: 20px; line-height: 1.5; margin: 0 0 12px; padding: 10px 14px; background: var(--accent-soft); border-left: 5px solid var(--accent); border-radius: 0 10px 10px 0; }
+.body section p { margin: 0; font-size: 16.5px; line-height: 1.95; }
+.body figure { margin: 14px 0 0; }
+.body details { margin: 12px 0 0; }
+.body summary { cursor: pointer; font-size: 13px; color: var(--accent-ink); font-weight: 700; list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+.body summary::-webkit-details-marker { display: none; }
+.body summary::before { content: "▸"; }
+.body details[open] summary::before { content: "▾"; }
+.body details img { display: block; width: 100%; max-width: 360px; margin: 10px 0 0; border-radius: 12px; border: 1px solid var(--line); }
+.summary-box { margin: 36px 0 0; background: #F7F6F2; border-radius: 12px; padding: 16px 18px; }
+.summary-box h2 { font-size: 16px; margin: 0 0 8px; }
+.summary-box ul { margin: 0; padding-left: 20px; font-size: 15px; display: grid; gap: 4px; }
+.cta-wrap { margin: 28px 0 0; }
+.sources { margin: 32px 0 0; }
+.sources h2 { font-size: 15px; margin: 0 0 8px; color: var(--muted); letter-spacing: .04em; }
 .sources ul { margin: 0; padding-left: 20px; font-size: 14px; }
 .sources li { margin: 4px 0; }
 .sources a { word-break: break-all; }
-.notice { margin: 24px 0 0; color: var(--muted); font-size: 13px; }
-.backlinks { margin: 32px 0 0; font-size: 15px; display: flex; gap: 16px; flex-wrap: wrap; }
+.notice { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.author { margin: 24px 0 0; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; align-items: start; border-top: 1px solid var(--line); padding-top: 18px; font-size: 14px; }
+.author img { width: 44px; height: 44px; border-radius: 50%; }
+.author p { margin: 0; color: var(--muted); }
+.author strong { color: var(--ink); display: block; }
+.share { margin: 22px 0 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.share a { font-size: 13px; font-weight: 700; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; text-decoration: none; }
+.share a:hover { border-color: var(--accent); color: var(--accent-ink); }
+.pager { margin: 24px 0 0; display: grid; gap: 10px; }
+@media (min-width: 560px) { .pager { grid-template-columns: 1fr 1fr; } }
+.pager a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; color: inherit; text-decoration: none; font-size: 14px; }
+.pager a:hover { border-color: #CFD8EA; }
+.pager .dir { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.pager .next { text-align: right; }
+.related { margin: 28px 0 0; }
 
 </style>
 </head>
 <body>
-<main>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/posts/"><img src="/brand/icon-192.png" alt="" width="30" height="30">家計と制度のメモ</a>
+    <nav class="gnav" aria-label="トピック">
+      <a href="/posts/">すべて</a>
+      <a href="/topics/furusato/">ふるさと納税</a><a href="/topics/nencho/">年末調整・確定申告</a><a href="/topics/ideco/">iDeCo</a><a href="/topics/nisa/" class="on">新NISA・証券口座</a>
+      <a href="/about/">運営者</a>
+    </nav>
+  </div>
+</header>
 
-<nav class="topnav"><a href="/"><img src="/brand/icon-192.png" alt="" width="28" height="28"></a><a href="/">家計と制度のメモ</a> <span>›</span> <a href="/posts/">記事一覧</a></nav>
-<article>
-  <p class="pr-note">この記事には広告（PR）が含まれます</p>
-  <p class="meta"><span class="type type-hikaku">比較</span><time datetime="2026-11-05T12:30:00+09:00">2026年11月5日</time></p>
-  <h1>つみたて投資枠と成長投資枠、何が違う？</h1>
-  <p class="lead">新NISA は 2 つの枠を同時に使えます。違いは「年間枠・対象商品・買い方」の 3 点</p>
-  <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/01.png" alt="つみたて投資枠と成長投資枠、何が違う？（表紙）" width="1080" height="1350">
+<main class="wrap layout">
+  <div class="main-col">
+<nav class="crumbs" aria-label="パンくず"><ol><li><a href="/posts/">家計と制度のメモ</a></li><li><a href="/topics/nisa/">新NISA・証券口座</a></li><li>つみたて投資枠と成長投資枠、何が違う？</li></ol></nav>
+<article class="post">
+  <header class="post-head">
+    <p class="meta"><a class="chip" href="/topics/nisa/">新NISA・証券口座</a><span class="chip type-hikaku">比較</span><time datetime="2026-11-05T12:30:00+09:00">2026年11月5日 公開</time></p>
+    <h1>つみたて投資枠と成長投資枠、何が違う？</h1>
+    <p class="lead">新NISA は 2 つの枠を同時に使えます。違いは「年間枠・対象商品・買い方」の 3 点</p>
+    <p class="pr-note">※ この記事には広告（PR）が含まれます。<a href="/about/#pr">広告の方針</a></p>
+  </header>
+
+  <div class="hero-img">
+    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/01.png" alt="つみたて投資枠と成長投資枠、何が違う？（Instagram 投稿の表紙）" width="1080" height="1350">
+    <nav class="toc" aria-label="目次">
+      <h2>この記事の内容</h2>
+      <ol><li><a href="#s1">年間の上限額</a></li><li><a href="#s2">生涯枠の内訳</a></li><li><a href="#s3">対象商品の区分</a></li><li><a href="#s4">買い方の違い</a></li><li><a href="#s5">併用のルール</a></li><li><a href="#s6">非課税期間</a></li><li><a href="#s7">制度として押さえる点</a></li></ol>
+    </nav>
+  </div>
+
+  <div class="body">
   
-  <section>
+  <section id="s1">
     <h2>年間の上限額</h2>
     <p>つみたて投資枠は年 120 万円、成長投資枠は年 240 万円。合わせて年 360 万円まで。生涯の枠は合計 1,800 万円です</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/02.png" alt="1. 年間の上限額" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 2 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/02.png" alt="年間の上限額（スライド 2）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s2">
     <h2>生涯枠の内訳</h2>
     <p>1,800 万円のうち成長投資枠で使えるのは 1,200 万円まで。つみたて投資枠だけで 1,800 万円を使うこともできます</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/03.png" alt="2. 生涯枠の内訳" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 3 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/03.png" alt="生涯枠の内訳（スライド 3）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s3">
     <h2>対象商品の区分</h2>
     <p>つみたて投資枠は金融庁の基準を満たす投資信託・ETF に限定。成長投資枠は上場株式や幅広い投資信託が対象（一部除外あり）</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/04.png" alt="3. 対象商品の区分" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 4 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/04.png" alt="対象商品の区分（スライド 4）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s4">
     <h2>買い方の違い</h2>
     <p>つみたて投資枠は定期・定額の積立に限られます。成長投資枠は積立でも一括購入でも使えます</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/05.png" alt="4. 買い方の違い" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 5 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/05.png" alt="買い方の違い（スライド 5）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s5">
     <h2>併用のルール</h2>
     <p>同じ年に両方の枠を使えます。どちらも同じ金融機関の同じ NISA 口座で管理され、枠ごとに別の金融機関には分けられません</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/06.png" alt="5. 併用のルール" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 6 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/06.png" alt="併用のルール（スライド 6）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s6">
     <h2>非課税期間</h2>
     <p>どちらも無期限です。売却はいつでもでき、売却した分の枠は買ったときの金額（簿価）で翌年に復活します</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/07.png" alt="6. 非課税期間" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 7 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/07.png" alt="非課税期間（スライド 7）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s7">
     <h2>制度として押さえる点</h2>
     <p>枠の違いは「上限・対象・買い方」。どの商品を選ぶかは制度の話ではないので、金融機関の商品説明と目論見書で確認してください</p>
-    <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/08.png" alt="7. 制度として押さえる点" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 8 / 9 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/08.png" alt="制度として押さえる点（スライド 8）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  
-  <section class="cta">
-    
-    <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank"><span class="pr" style="border-color:#fff;color:#fff">PR</span>証券口座を開く（松井証券） →</a>
-    <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
-    
+  </div>
+
+  <section class="summary-box">
+    <h2>まとめ</h2>
+    <ul><li>年間の上限額</li><li>生涯枠の内訳</li><li>対象商品の区分</li><li>買い方の違い</li><li>併用のルール</li><li>非課税期間</li><li>制度として押さえる点</li></ul>
   </section>
+
+  
+  <div class="cta-wrap">
+    
+    <section class="cta-box">
+      <p class="kicker">次の一歩</p>
+      <p>手順を確認したら、手続きは公式サイトから。</p>
+      <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank"><span class="pr">PR</span>証券口座を開く（松井証券） →</a>
+      <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
+    
+  </div>
+
   
   <section class="sources">
-    <h2>出典</h2>
-    <ul>
-      
-      <li><a href="https://www.fsa.go.jp/policy/nisa2/" rel="noopener" target="_blank">https://www.fsa.go.jp/policy/nisa2/</a></li>
-      
-    </ul>
+    <h2>出典（一次情報）</h2>
+    <ul><li><a href="https://www.fsa.go.jp/policy/nisa2/" rel="noopener" target="_blank">https://www.fsa.go.jp/policy/nisa2/</a></li></ul>
   </section>
   
   <p class="notice">この記事は 2026年11月5日 時点の制度・公表資料に基づいています。金額や期限は変わることがあるため、手続きの前に出典の公式サイトで最新の内容をご確認ください。特定の金融商品や個別の判断をすすめるものではありません。</p>
-</article>
-<nav class="backlinks"><a href="/posts/">← 記事一覧</a><a href="/">リンク集</a></nav>
 
-<footer>
-  当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。<br>最終更新: 2026-11-08
-  <nav><a href="/">リンク集</a><a href="/posts/">記事一覧</a><a href="/about/">運営者情報</a></nav>
-</footer>
+  <div class="author">
+    <img src="/brand/icon-192.png" alt="" width="44" height="44">
+    <p><strong>家計と制度のメモ 編集部（株式会社B）</strong>家計に関わる制度の「手続き・期限・落とし穴」を、一次情報にもとづいて整理しています。<a href="/about/">運営者情報</a></p>
+  </div>
+  <div class="share">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/&text=%E3%81%A4%E3%81%BF%E3%81%9F%E3%81%A6%E6%8A%95%E8%B3%87%E6%9E%A0%E3%81%A8%E6%88%90%E9%95%B7%E6%8A%95%E8%B3%87%E6%9E%A0%E3%80%81%E4%BD%95%E3%81%8C%E9%81%95%E3%81%86%EF%BC%9F" rel="noopener" target="_blank">X で共有</a>
+    <a href="https://social-plugins.line.me/lineit/share?url=https%3A//kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/" rel="noopener" target="_blank">LINE で送る</a>
+    <a href="https://b.hatena.ne.jp/entry/kakei-seido.com/posts/2026-11-05-tsumitate-vs-seicho/" rel="noopener" target="_blank">はてなブックマーク</a>
+  </div>
+</article>
+
+<nav class="pager" aria-label="前後の記事">
+  <a href="/posts/2026-11-05-onestop-shinsei-tejun/"><span class="dir">← 新しい記事</span>ワンストップ特例、申請の 5 ステップ</a>
+  <a class="next" href="/posts/2026-11-05-kodomo-nisa-junbi/"><span class="dir">古い記事 →</span>こどもNISA に備えて、親が今できる 4 つ</a>
+</nav>
+
+
+<section class="related">
+  <h2 class="sec-title">あわせて読みたい<a href="/topics/nisa/">新NISA・証券口座の記事一覧 →</a></h2>
+  <ul class="grid">
+    
+    <li><a class="post-card" href="/posts/2026-11-08-nisa-vs-tokutei-kouza/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-nisa-vs-tokutei-kouza/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-hikaku">比較</span><time datetime="2026-11-08T12:30:00+09:00">2026年11月8日</time></span>
+        <span class="title" style="display:block">NISA 口座と特定口座、税金の違い 5 点</span>
+        <span class="excerpt" style="display:-webkit-box">同じ商品を買っても、口座が違えば税金・確定申告・損失の扱いが変わります</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/posts/2026-11-07-nisa-tsumitate-henkou/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-nisa-tsumitate-henkou/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-tejun">手続き</span><time datetime="2026-11-07T19:30:00+09:00">2026年11月7日</time></span>
+        <span class="title" style="display:block">NISA の積立額、変える・止めるの手順</span>
+        <span class="excerpt" style="display:-webkit-box">増額もボーナス月の設定も、締切日を過ぎると反映は翌々月。年内に変えるなら今月が目安です</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/posts/2026-11-06-nisa-kinyukikan-henkou/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-06-nisa-kinyukikan-henkou/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-tejun">手続き</span><time datetime="2026-11-06T12:30:00+09:00">2026年11月6日</time></span>
+        <span class="title" style="display:block">NISA の金融機関、来年から変える 5 ステップ</span>
+        <span class="excerpt" style="display:-webkit-box">「1 人 1 口座だから変えられない」は誤解です。年単位で変更できます</span>
+      </span>
+    </a></li>
+    
+  </ul>
+</section>
+
+</div>
+  
+  <aside class="sidebar">
+    
+    <section class="box">
+      <h3>新着記事</h3>
+      <ul class="mini">
+        
+        <li><a href="/posts/2026-11-08-nisa-vs-tokutei-kouza/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-nisa-vs-tokutei-kouza/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">NISA 口座と特定口座、税金の違い 5 点</span><span class="meta"><time datetime="2026-11-08T12:30:00+09:00">2026年11月8日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-08-furusato-shomeisho-kakutei/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-furusato-shomeisho-kakutei/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">ふるさと納税の確定申告、証明書 1 枚で 5 ステップ</span><span class="meta"><time datetime="2026-11-08T07:30:00+09:00">2026年11月8日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-nisa-tsumitate-henkou/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-nisa-tsumitate-henkou/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">NISA の積立額、変える・止めるの手順</span><span class="meta"><time datetime="2026-11-07T19:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-furusato-fufu-son3/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-furusato-fufu-son3/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">ふるさと納税、夫婦で損する 3 つ</span><span class="meta"><time datetime="2026-11-07T12:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-ideco-moshikomi-5steps/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-ideco-moshikomi-5steps/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">iDeCo、申込から掛金開始までの 5 ステップ</span><span class="meta"><time datetime="2026-11-07T07:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+      </ul>
+    </section>
+    
+    
+    <section class="box">
+      <h3>トピック</h3>
+      <ul class="taglist"><li><a href="/topics/furusato/">ふるさと納税<span class="n">7</span></a></li><li><a href="/topics/nencho/">年末調整・確定申告<span class="n">2</span></a></li><li><a href="/topics/ideco/">iDeCo<span class="n">1</span></a></li><li><a href="/topics/nisa/">新NISA・証券口座<span class="n">6</span></a></li></ul>
+    </section>
+    
+    
+    <section class="cta-box">
+      <p class="kicker">はじめの一歩</p>
+      <p>手続きの記事を読んだら、口座開設から。</p>
+      <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank"><span class="pr">PR</span>証券口座を開く（松井証券） →</a>
+      <p class="fine">広告（PR）です。条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
+    
+    <section class="box">
+      <h3>このサイトについて</h3>
+      <p style="margin:0;font-size:14px">新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。制度の数字・期限は金融庁・国税庁・総務省などの一次情報にもとづき、各記事に出典を示しています。</p>
+      <p style="margin:8px 0 0;font-size:14px"><a href="/about/">運営者情報・広告の方針 →</a></p>
+    </section>
+  </aside>
+  
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>家計と制度のメモ</h4>
+      <p style="margin:0">新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。Instagram / Threads に投稿した内容を、記事としても読めるようにしています。</p>
+      <p style="margin:8px 0 0">当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。</p>
+    </div>
+    <div>
+      <h4>トピック</h4>
+      <ul><li><a href="/topics/furusato/">ふるさと納税</a></li><li><a href="/topics/nencho/">年末調整・確定申告</a></li><li><a href="/topics/ideco/">iDeCo</a></li><li><a href="/topics/nisa/">新NISA・証券口座</a></li><li><a href="/posts/">記事一覧</a></li></ul>
+    </div>
+    <div>
+      <h4>サイト情報</h4>
+      <ul><li><a href="/about/">運営者情報</a></li><li><a href="/about/#pr">広告（PR）について</a></li><li><a href="/about/#disclaimer">免責事項</a></li><li><a href="/">Instagram のリンク集</a></li></ul>
+    </div>
+    <p class="copy">© 2026 株式会社B　最終更新: 2026-11-08</p>
+  </div>
+</footer>
 </body>
 </html>

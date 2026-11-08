@@ -17,154 +17,414 @@
 <meta property="og:image:height" content="1350">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:published_time" content="2026-11-02T19:30:00+09:00">
+<meta property="article:section" content="年末調整・確定申告">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="2026 年分の年末調整、変わった 4 つ">
 <meta name="twitter:description" content="去年の書類の数字をそのまま写すと、控除が足りないまま提出することになります">
 <meta name="twitter:image" content="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/01.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Organization", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2"}, "dateModified": "2026-11-02T19:30:00+09:00", "datePublished": "2026-11-02T19:30:00+09:00", "description": "\u53bb\u5e74\u306e\u66f8\u985e\u306e\u6570\u5b57\u3092\u305d\u306e\u307e\u307e\u5199\u3059\u3068\u3001\u63a7\u9664\u304c\u8db3\u308a\u306a\u3044\u307e\u307e\u63d0\u51fa\u3059\u308b\u3053\u3068\u306b\u306a\u308a\u307e\u3059", "headline": "2026 \u5e74\u5206\u306e\u5e74\u672b\u8abf\u6574\u3001\u5909\u308f\u3063\u305f 4 \u3064", "image": ["https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/01.png"], "mainEntityOfPage": "https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/", "publisher": {"@type": "Organization", "name": "\u682a\u5f0f\u4f1a\u793eB"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "articleSection": "\u5e74\u672b\u8abf\u6574\u30fb\u78ba\u5b9a\u7533\u544a", "author": {"@type": "Organization", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "url": "https://kakei-seido.com/about/"}, "dateModified": "2026-11-02T19:30:00+09:00", "datePublished": "2026-11-02T19:30:00+09:00", "description": "\u53bb\u5e74\u306e\u66f8\u985e\u306e\u6570\u5b57\u3092\u305d\u306e\u307e\u307e\u5199\u3059\u3068\u3001\u63a7\u9664\u304c\u8db3\u308a\u306a\u3044\u307e\u307e\u63d0\u51fa\u3059\u308b\u3053\u3068\u306b\u306a\u308a\u307e\u3059", "headline": "2026 \u5e74\u5206\u306e\u5e74\u672b\u8abf\u6574\u3001\u5909\u308f\u3063\u305f 4 \u3064", "image": ["https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/01.png"], "mainEntityOfPage": "https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/", "publisher": {"@type": "Organization", "logo": {"@type": "ImageObject", "url": "https://kakei-seido.com/brand/icon-512.png"}, "name": "\u682a\u5f0f\u4f1a\u793eB"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://kakei-seido.com/posts/", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "position": 1}, {"@type": "ListItem", "item": "https://kakei-seido.com/topics/nencho/", "name": "\u5e74\u672b\u8abf\u6574\u30fb\u78ba\u5b9a\u7533\u544a", "position": 2}, {"@type": "ListItem", "item": "https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/", "name": "2026 \u5e74\u5206\u306e\u5e74\u672b\u8abf\u6574\u3001\u5909\u308f\u3063\u305f 4 \u3064", "position": 3}]}</script>
 
+<meta name="theme-color" content="#FBFAF7">
 <link rel="icon" type="image/png" sizes="192x192" href="/brand/icon-192.png">
 <link rel="apple-touch-icon" href="/brand/icon-512.png">
 <style>
-:root { --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --card: #FFFFFF; --accent: #2F6FED; --accent-soft: #E6EEFD; --line: #E6E4DE; --maxw: 640px; }
+:root {
+  --bg: #FBFAF7; --ink: #1B1F24; --muted: #5B6470; --faint: #8A929C; --card: #FFFFFF;
+  --accent: #2F6FED; --accent-ink: #1F4FB8; --accent-soft: #E9F0FE; --line: #E6E4DE; --line-soft: #F0EEE8;
+  --warn: #D9453D; --warn-soft: #FBE9E7; --ok: #1F9D6A; --ok-soft: #E3F5EC;
+  --radius: 14px; --shadow: 0 1px 2px rgba(27,31,36,.04), 0 6px 20px -12px rgba(27,31,36,.18);
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Noto Sans JP", "Noto Sans CJK JP", sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; }
-main { max-width: var(--maxw); margin: 0 auto; padding: 24px 16px 48px; }
-a { color: var(--accent); }
-h1 { font-size: 24px; line-height: 1.4; margin: 0 0 6px; }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand img { width: 48px; height: 48px; border-radius: 50%; flex: none; }
-.tagline { color: var(--muted); font-size: 15px; margin: 0 0 28px; }
-.sec-h { font-size: 14px; letter-spacing: .08em; color: var(--muted); margin: 28px 0 10px; text-transform: uppercase; }
-ul.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-a.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; min-height: 64px; text-decoration: none; color: inherit; }
-a.card:active { background: #F2F6FF; }
-a.card .label { font-weight: 700; font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-a.card .label::after { content: "→"; color: var(--accent); font-weight: 700; flex: none; }
-a.card .note { color: var(--muted); font-size: 14px; margin-top: 4px; }
-.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid var(--muted); color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; line-height: 1.6; }
-.type { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 1px 10px; vertical-align: middle; }
-.type-sonsuru { color: #D9453D; background: #FBE9E7; }
-.type-hikaku { color: #1F9D6A; background: #E3F5EC; }
-.meta { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.topnav { font-size: 14px; margin: 0 0 20px; display: flex; align-items: center; gap: 8px; }
-.topnav a { color: var(--ink); text-decoration: none; font-weight: 700; }
-.topnav img { width: 28px; height: 28px; border-radius: 50%; }
-.more { display: block; text-align: center; font-weight: 700; margin-top: 12px; }
-footer { margin-top: 36px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
-footer nav { margin-top: 8px; display: flex; gap: 14px; flex-wrap: wrap; }
-footer nav a { color: var(--muted); }
+html { scroll-padding-top: 72px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", sans-serif; line-height: 1.8; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; font-feature-settings: "palt"; }
+a { color: var(--accent-ink); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-.pr-note { font-size: 13px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 16px; }
-article h1 { font-size: 26px; margin: 10px 0 12px; }
-.lead { font-size: 17px; color: var(--muted); margin: 0 0 20px; }
-article img { display: block; width: 100%; max-width: 420px; height: auto; margin: 16px auto 0; border-radius: 14px; border: 1px solid var(--line); background: var(--card); }
-article section { margin: 32px 0 0; }
-article h2 { font-size: 20px; line-height: 1.45; margin: 0 0 8px; padding-left: 12px; border-left: 4px solid var(--accent); }
-article section p { margin: 0; font-size: 16px; }
-.cta { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px 22px; }
-.cta .button { display: block; margin: 0; background: var(--accent); color: #fff; text-decoration: none; text-align: center; font-weight: 800; font-size: 17px; border-radius: 14px; padding: 16px 18px; }
-.cta .button:active { opacity: .9; }
-.cta .later { margin: 0; color: var(--muted); font-size: 15px; }
-.cta .fine { margin: 10px 0 0; color: var(--muted); font-size: 12px; }
+/* ヘッダー */
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(251,250,247,.92); backdrop-filter: saturate(1.3) blur(8px); -webkit-backdrop-filter: saturate(1.3) blur(8px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; gap: 16px; height: 56px; }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 17px; letter-spacing: .01em; flex: none; }
+.logo img { width: 30px; height: 30px; border-radius: 50%; }
+.gnav { display: flex; gap: 4px; margin-left: auto; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.gnav::-webkit-scrollbar { display: none; }
+.gnav a { white-space: nowrap; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 700; padding: 6px 10px; border-radius: 999px; }
+.gnav a:hover, .gnav a.on { color: var(--accent-ink); background: var(--accent-soft); }
+@media (max-width: 640px) {
+  .site-header .wrap { height: auto; flex-wrap: wrap; padding-bottom: 8px; gap: 6px 16px; }
+  .logo { height: 48px; }
+  .gnav { margin-left: -16px; margin-right: -16px; padding: 0 16px; width: calc(100% + 32px); }
+}
+
+/* レイアウト */
+main.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 20px 0 56px; }
+@media (min-width: 1024px) { main.layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; padding-top: 28px; } }
+main.narrow { max-width: 720px; }
+.sidebar { display: grid; gap: 20px; align-content: start; }
+@media (min-width: 1024px) { .sidebar { position: sticky; top: 76px; } }
+
+/* 共通パーツ */
+.crumbs { font-size: 13px; color: var(--muted); margin: 0 0 14px; display: flex; gap: 6px; flex-wrap: wrap; }
+.crumbs a { color: var(--muted); text-decoration: none; }
+.crumbs a:hover { color: var(--accent-ink); }
+.crumbs li { list-style: none; }
+.crumbs ol { display: contents; margin: 0; padding: 0; }
+.crumbs li + li::before { content: "›"; color: var(--faint); margin-right: 6px; }
+.chip { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; line-height: 1.6; text-decoration: none; }
+.chip.type-sonsuru { color: var(--warn); background: var(--warn-soft); }
+.chip.type-hikaku { color: var(--ok); background: var(--ok-soft); }
+.pr { display: inline-block; font-size: 11px; font-weight: 700; border: 1.5px solid currentColor; color: var(--muted); border-radius: 6px; padding: 0 6px; margin-right: 8px; vertical-align: middle; line-height: 1.6; }
+.meta { color: var(--muted); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 18px; }
+.box h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: .06em; color: var(--muted); }
+.sec-title { font-size: 20px; margin: 0 0 12px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.sec-title a { font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+/* 記事カード */
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 560px) { .grid { grid-template-columns: 1fr 1fr; } }
+.post-card { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; color: inherit; text-decoration: none; box-shadow: var(--shadow); transition: transform .12s ease, border-color .12s ease; }
+.post-card:hover { border-color: #CFD8EA; transform: translateY(-1px); }
+.post-card .thumb { aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; background: var(--line-soft); }
+.post-card .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.post-card .title { font-weight: 800; font-size: 16px; line-height: 1.5; margin: 6px 0 6px; }
+.post-card .excerpt { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.post-card .meta { margin-top: 8px; font-size: 12px; }
+.post-card.lg { grid-template-columns: 132px minmax(0, 1fr); padding: 14px; }
+.post-card.lg .title { font-size: 19px; }
+.post-card.lg .excerpt { -webkit-line-clamp: 3; font-size: 14px; }
+@media (min-width: 560px) { .post-card.lg { grid-template-columns: 200px minmax(0, 1fr); gap: 20px; padding: 16px; } .post-card.lg .title { font-size: 22px; } }
+
+/* 小さなリスト（サイドバー・関連） */
+.mini { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.mini a { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 12px; color: inherit; text-decoration: none; align-items: start; }
+.mini .thumb { aspect-ratio: 4 / 5; border-radius: 8px; overflow: hidden; background: var(--line-soft); }
+.mini .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.mini .title { font-weight: 700; font-size: 14px; line-height: 1.5; }
+.mini .meta { font-size: 12px; margin-top: 2px; }
+.mini a:hover .title { color: var(--accent-ink); }
+.taglist { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.taglist a { display: inline-block; font-size: 13px; font-weight: 700; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; text-decoration: none; }
+.taglist a:hover, .taglist a.on { border-color: var(--accent); color: var(--accent-ink); background: var(--accent-soft); }
+.taglist .n { color: var(--faint); font-weight: 600; margin-left: 4px; }
+
+/* CTA */
+.cta-box { background: linear-gradient(180deg, #FFFFFF, #F4F7FE); border: 1px solid #D6E0F5; border-radius: var(--radius); padding: 20px 18px 18px; }
+.cta-box .kicker { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .06em; color: var(--accent-ink); }
+.cta-box p { margin: 0 0 12px; font-size: 15px; }
+.button { display: block; background: var(--accent); color: #fff; text-decoration: none; text-align: center; font-weight: 800; font-size: 16px; border-radius: 12px; padding: 14px 16px; box-shadow: 0 6px 16px -8px rgba(47,111,237,.6); }
+.button:hover { background: var(--accent-ink); }
+.button .pr { color: #fff; }
+.fine { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.later { margin: 0; color: var(--muted); font-size: 14px; }
+
+/* フッター */
+.site-footer { border-top: 1px solid var(--line); background: #F5F3EE; color: var(--muted); font-size: 13px; margin-top: 24px; }
+.site-footer .wrap { padding: 28px 16px 36px; display: grid; gap: 24px; }
+@media (min-width: 720px) { .site-footer .wrap { grid-template-columns: 1.4fr 1fr 1fr; } }
+.site-footer h4 { margin: 0 0 8px; font-size: 13px; color: var(--ink); }
+.site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.site-footer a { color: var(--muted); text-decoration: none; }
+.site-footer a:hover { color: var(--accent-ink); }
+.site-footer .copy { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; font-size: 12px; color: var(--faint); }
+
+article.post { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 18px 26px; box-shadow: var(--shadow); }
+@media (min-width: 720px) { article.post { padding: 32px 36px 36px; } }
+.post-head h1 { font-size: 25px; line-height: 1.45; margin: 10px 0 12px; letter-spacing: .01em; }
+@media (min-width: 720px) { .post-head h1 { font-size: 30px; } }
+.post-head .lead { font-size: 16px; color: var(--muted); margin: 0 0 18px; line-height: 1.8; }
+.post-head .meta time { color: var(--muted); }
+.pr-note { font-size: 12px; color: var(--muted); margin: 0; }
+.hero-img { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; margin: 0 0 22px; align-items: start; }
+@media (min-width: 560px) { .hero-img { grid-template-columns: 200px minmax(0, 1fr); } }
+.hero-img img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
+.toc { background: #F7F6F2; border-radius: 12px; padding: 14px 16px; }
+.toc h2 { font-size: 14px; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; }
+.toc ol { margin: 0; padding-left: 22px; font-size: 14px; display: grid; gap: 4px; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--accent-ink); text-decoration: underline; }
+.body section { margin: 32px 0 0; scroll-margin-top: 80px; }
+.body h2 { font-size: 20px; line-height: 1.5; margin: 0 0 12px; padding: 10px 14px; background: var(--accent-soft); border-left: 5px solid var(--accent); border-radius: 0 10px 10px 0; }
+.body section p { margin: 0; font-size: 16.5px; line-height: 1.95; }
+.body figure { margin: 14px 0 0; }
+.body details { margin: 12px 0 0; }
+.body summary { cursor: pointer; font-size: 13px; color: var(--accent-ink); font-weight: 700; list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+.body summary::-webkit-details-marker { display: none; }
+.body summary::before { content: "▸"; }
+.body details[open] summary::before { content: "▾"; }
+.body details img { display: block; width: 100%; max-width: 360px; margin: 10px 0 0; border-radius: 12px; border: 1px solid var(--line); }
+.summary-box { margin: 36px 0 0; background: #F7F6F2; border-radius: 12px; padding: 16px 18px; }
+.summary-box h2 { font-size: 16px; margin: 0 0 8px; }
+.summary-box ul { margin: 0; padding-left: 20px; font-size: 15px; display: grid; gap: 4px; }
+.cta-wrap { margin: 28px 0 0; }
+.sources { margin: 32px 0 0; }
+.sources h2 { font-size: 15px; margin: 0 0 8px; color: var(--muted); letter-spacing: .04em; }
 .sources ul { margin: 0; padding-left: 20px; font-size: 14px; }
 .sources li { margin: 4px 0; }
 .sources a { word-break: break-all; }
-.notice { margin: 24px 0 0; color: var(--muted); font-size: 13px; }
-.backlinks { margin: 32px 0 0; font-size: 15px; display: flex; gap: 16px; flex-wrap: wrap; }
+.notice { margin: 22px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.author { margin: 24px 0 0; display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 12px; align-items: start; border-top: 1px solid var(--line); padding-top: 18px; font-size: 14px; }
+.author img { width: 44px; height: 44px; border-radius: 50%; }
+.author p { margin: 0; color: var(--muted); }
+.author strong { color: var(--ink); display: block; }
+.share { margin: 22px 0 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.share a { font-size: 13px; font-weight: 700; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; text-decoration: none; }
+.share a:hover { border-color: var(--accent); color: var(--accent-ink); }
+.pager { margin: 24px 0 0; display: grid; gap: 10px; }
+@media (min-width: 560px) { .pager { grid-template-columns: 1fr 1fr; } }
+.pager a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; color: inherit; text-decoration: none; font-size: 14px; }
+.pager a:hover { border-color: #CFD8EA; }
+.pager .dir { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.pager .next { text-align: right; }
+.related { margin: 28px 0 0; }
 
 </style>
 </head>
 <body>
-<main>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/posts/"><img src="/brand/icon-192.png" alt="" width="30" height="30">家計と制度のメモ</a>
+    <nav class="gnav" aria-label="トピック">
+      <a href="/posts/">すべて</a>
+      <a href="/topics/furusato/">ふるさと納税</a><a href="/topics/nencho/" class="on">年末調整・確定申告</a><a href="/topics/ideco/">iDeCo</a><a href="/topics/nisa/">新NISA・証券口座</a>
+      <a href="/about/">運営者</a>
+    </nav>
+  </div>
+</header>
 
-<nav class="topnav"><a href="/"><img src="/brand/icon-192.png" alt="" width="28" height="28"></a><a href="/">家計と制度のメモ</a> <span>›</span> <a href="/posts/">記事一覧</a></nav>
-<article>
-  <p class="pr-note">この記事には広告（PR）が含まれます</p>
-  <p class="meta"><span class="type type-sonsuru">知らないと損</span><time datetime="2026-11-02T19:30:00+09:00">2026年11月2日</time></p>
-  <h1>2026 年分の年末調整、変わった 4 つ</h1>
-  <p class="lead">去年の書類の数字をそのまま写すと、控除が足りないまま提出することになります</p>
-  <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/01.png" alt="2026 年分の年末調整、変わった 4 つ（表紙）" width="1080" height="1350">
+<main class="wrap layout">
+  <div class="main-col">
+<nav class="crumbs" aria-label="パンくず"><ol><li><a href="/posts/">家計と制度のメモ</a></li><li><a href="/topics/nencho/">年末調整・確定申告</a></li><li>2026 年分の年末調整、変わった 4 つ</li></ol></nav>
+<article class="post">
+  <header class="post-head">
+    <p class="meta"><a class="chip" href="/topics/nencho/">年末調整・確定申告</a><span class="chip type-sonsuru">知らないと損</span><time datetime="2026-11-02T19:30:00+09:00">2026年11月2日 公開</time></p>
+    <h1>2026 年分の年末調整、変わった 4 つ</h1>
+    <p class="lead">去年の書類の数字をそのまま写すと、控除が足りないまま提出することになります</p>
+    <p class="pr-note">※ この記事には広告（PR）が含まれます。<a href="/about/#pr">広告の方針</a></p>
+  </header>
+
+  <div class="hero-img">
+    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/01.png" alt="2026 年分の年末調整、変わった 4 つ（Instagram 投稿の表紙）" width="1080" height="1350">
+    <nav class="toc" aria-label="目次">
+      <h2>この記事の内容</h2>
+      <ol><li><a href="#s1">1. 基礎控除が 62 万円に</a></li><li><a href="#s2">2. 給与所得控除の最低額</a></li><li><a href="#s3">3. 生命保険料控除の特例</a></li><li><a href="#s4">4. 扶養の所得要件も変わる</a></li><li><a href="#s5">11 月までの給与は従来どおり</a></li><li><a href="#s6">出す書類は 3 枚のまま</a></li><li><a href="#s7">iDeCo の控除は別枠で残る</a></li><li><a href="#s8">来年の控除に間に合わせる</a></li></ol>
+    </nav>
+  </div>
+
+  <div class="body">
   
-  <section>
+  <section id="s1">
     <h2>1. 基礎控除が 62 万円に</h2>
     <p>合計所得 2,350 万円以下なら 58 万円 → 62 万円。所得が低い人は上乗せで最大 104 万円。2026 年 12 月 1 日施行、2026 年分から</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/02.png" alt="1. 1. 基礎控除が 62 万円に" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 2 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/02.png" alt="1. 基礎控除が 62 万円に（スライド 2）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s2">
     <h2>2. 給与所得控除の最低額</h2>
     <p>給与所得控除の最低保障額が 65 万円から 74 万円に。年収の低いパートや学生ほど影響が大きく、扶養の判定にも関わります</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/03.png" alt="2. 2. 給与所得控除の最低額" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 3 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/03.png" alt="2. 給与所得控除の最低額（スライド 3）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s3">
     <h2>3. 生命保険料控除の特例</h2>
     <p>23 歳未満の扶養親族がいる人は、2026・2027 年分は一般生命保険料控除（新契約）の上限が 4 万円から 6 万円に。3 区分合計 12 万円は同じ</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/04.png" alt="3. 3. 生命保険料控除の特例" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 4 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/04.png" alt="3. 生命保険料控除の特例（スライド 4）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s4">
     <h2>4. 扶養の所得要件も変わる</h2>
     <p>扶養親族と同一生計配偶者の合計所得の要件は 62 万円以下（給与だけなら年収 136 万円以下）に。19〜22 歳の特定親族特別控除の下限も連動します</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/05.png" alt="4. 4. 扶養の所得要件も変わる" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 5 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/05.png" alt="4. 扶養の所得要件も変わる（スライド 5）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s5">
     <h2>11 月までの給与は従来どおり</h2>
     <p>11 月までの源泉徴収は改正前の税額表のまま。差額は 12 月の年末調整でまとめて精算されるので、12 月の手取りが例年と変わることがあります</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/06.png" alt="5. 11 月までの給与は従来どおり" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 6 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/06.png" alt="11 月までの給与は従来どおり（スライド 6）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s6">
     <h2>出す書類は 3 枚のまま</h2>
     <p>扶養控除等申告書、基礎控除申告書（配偶者控除等・特定親族特別控除・所得金額調整控除と兼用）、保険料控除申告書。様式は改正後の金額に更新されています</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/07.png" alt="6. 出す書類は 3 枚のまま" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 7 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/07.png" alt="出す書類は 3 枚のまま（スライド 7）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s7">
     <h2>iDeCo の控除は別枠で残る</h2>
     <p>小規模企業共済等掛金控除は今回の改正と別枠で使えます。掛金は全額所得控除で、月 2 万円・税率 20% の人なら年 約 4.8 万円の軽減（税率で異なります）</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/08.png" alt="7. iDeCo の控除は別枠で残る" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 8 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/08.png" alt="iDeCo の控除は別枠で残る（スライド 8）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  <section>
+  <section id="s8">
     <h2>来年の控除に間に合わせる</h2>
     <p>加入手続きは 1〜2 か月。2027 年 1 月の掛金から始めるなら年内の申込が目安。1 月分から掛金上限も上がる予定（会社員は月 2.3 万円→6.2 万円）</p>
-    <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/09.png" alt="8. 来年の控除に間に合わせる" width="1080" height="1350" loading="lazy">
+    <details>
+      <summary>スライド 9 / 10 を見る</summary>
+      <img src="https://kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/09.png" alt="来年の控除に間に合わせる（スライド 9）" width="1080" height="1350" loading="lazy">
+    </details>
   </section>
   
-  
-  <section class="cta">
-    
-    <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+EI56B6+3XCC+BXIYQ" rel="nofollow sponsored noopener" target="_blank"><span class="pr" style="border-color:#fff;color:#fff">PR</span>iDeCo の申込を Web で始める →</a>
-    <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
-    
+  </div>
+
+  <section class="summary-box">
+    <h2>まとめ</h2>
+    <ul><li>1. 基礎控除が 62 万円に</li><li>2. 給与所得控除の最低額</li><li>3. 生命保険料控除の特例</li><li>4. 扶養の所得要件も変わる</li><li>11 月までの給与は従来どおり</li><li>出す書類は 3 枚のまま</li><li>iDeCo の控除は別枠で残る</li><li>来年の控除に間に合わせる</li></ul>
   </section>
+
+  
+  <div class="cta-wrap">
+    
+    <section class="cta-box">
+      <p class="kicker">次の一歩</p>
+      <p>手順を確認したら、手続きは公式サイトから。</p>
+      <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+EI56B6+3XCC+BXIYQ" rel="nofollow sponsored noopener" target="_blank"><span class="pr">PR</span>iDeCo の申込を Web で始める →</a>
+      <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
+    
+  </div>
+
   
   <section class="sources">
-    <h2>出典</h2>
-    <ul>
-      
-      <li><a href="https://www.nta.go.jp/users/gensen/2026kiso/index.htm" rel="noopener" target="_blank">https://www.nta.go.jp/users/gensen/2026kiso/index.htm</a></li>
-      
-      <li><a href="https://www.nta.go.jp/publication/pamph/gensen/nencho2026/01.htm" rel="noopener" target="_blank">https://www.nta.go.jp/publication/pamph/gensen/nencho2026/01.htm</a></li>
-      
-      <li><a href="https://www.nta.go.jp/users/gensen/nencho/index.htm" rel="noopener" target="_blank">https://www.nta.go.jp/users/gensen/nencho/index.htm</a></li>
-      
-      <li><a href="https://www.ideco-koushiki.jp/" rel="noopener" target="_blank">https://www.ideco-koushiki.jp/</a></li>
-      
-    </ul>
+    <h2>出典（一次情報）</h2>
+    <ul><li><a href="https://www.nta.go.jp/users/gensen/2026kiso/index.htm" rel="noopener" target="_blank">https://www.nta.go.jp/users/gensen/2026kiso/index.htm</a></li><li><a href="https://www.nta.go.jp/publication/pamph/gensen/nencho2026/01.htm" rel="noopener" target="_blank">https://www.nta.go.jp/publication/pamph/gensen/nencho2026/01.htm</a></li><li><a href="https://www.nta.go.jp/users/gensen/nencho/index.htm" rel="noopener" target="_blank">https://www.nta.go.jp/users/gensen/nencho/index.htm</a></li><li><a href="https://www.ideco-koushiki.jp/" rel="noopener" target="_blank">https://www.ideco-koushiki.jp/</a></li></ul>
   </section>
   
   <p class="notice">この記事は 2026年11月2日 時点の制度・公表資料に基づいています。金額や期限は変わることがあるため、手続きの前に出典の公式サイトで最新の内容をご確認ください。特定の金融商品や個別の判断をすすめるものではありません。</p>
-</article>
-<nav class="backlinks"><a href="/posts/">← 記事一覧</a><a href="/">リンク集</a></nav>
 
-<footer>
-  当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。<br>最終更新: 2026-11-08
-  <nav><a href="/">リンク集</a><a href="/posts/">記事一覧</a><a href="/about/">運営者情報</a></nav>
-</footer>
+  <div class="author">
+    <img src="/brand/icon-192.png" alt="" width="44" height="44">
+    <p><strong>家計と制度のメモ 編集部（株式会社B）</strong>家計に関わる制度の「手続き・期限・落とし穴」を、一次情報にもとづいて整理しています。<a href="/about/">運営者情報</a></p>
+  </div>
+  <div class="share">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/&text=2026%20%E5%B9%B4%E5%88%86%E3%81%AE%E5%B9%B4%E6%9C%AB%E8%AA%BF%E6%95%B4%E3%80%81%E5%A4%89%E3%82%8F%E3%81%A3%E3%81%9F%204%20%E3%81%A4" rel="noopener" target="_blank">X で共有</a>
+    <a href="https://social-plugins.line.me/lineit/share?url=https%3A//kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/" rel="noopener" target="_blank">LINE で送る</a>
+    <a href="https://b.hatena.ne.jp/entry/kakei-seido.com/posts/2026-11-02-nencho-2026-henkou4/" rel="noopener" target="_blank">はてなブックマーク</a>
+  </div>
+</article>
+
+<nav class="pager" aria-label="前後の記事">
+  <a href="/posts/2026-11-03-furusato-5steps/"><span class="dir">← 新しい記事</span>ふるさと納税、12/31 までの 5 ステップ</a>
+  
+</nav>
+
+
+<section class="related">
+  <h2 class="sec-title">あわせて読みたい<a href="/topics/nencho/">年末調整・確定申告の記事一覧 →</a></h2>
+  <ul class="grid">
+    
+    <li><a class="post-card" href="/posts/2026-11-06-nenmatsu-chosei-kojo3/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-06-nenmatsu-chosei-kojo3/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-sonsuru">知らないと損</span><time datetime="2026-11-06T07:30:00+09:00">2026年11月6日</time></span>
+        <span class="title" style="display:block">年末調整、出し忘れると損する控除 3 つ</span>
+        <span class="excerpt" style="display:-webkit-box">届いたはがきを机に置いたまま提出日を迎える人が毎年います。出すものは 3 種類だけです</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/posts/2026-11-08-nisa-vs-tokutei-kouza/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-nisa-vs-tokutei-kouza/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-hikaku">比較</span><time datetime="2026-11-08T12:30:00+09:00">2026年11月8日</time></span>
+        <span class="title" style="display:block">NISA 口座と特定口座、税金の違い 5 点</span>
+        <span class="excerpt" style="display:-webkit-box">同じ商品を買っても、口座が違えば税金・確定申告・損失の扱いが変わります</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/posts/2026-11-08-furusato-shomeisho-kakutei/">
+      <span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-furusato-shomeisho-kakutei/01.png" alt="" loading="lazy" width="1080" height="1350"></span>
+      <span>
+        <span class="meta"><span class="chip type-tejun">手続き</span><time datetime="2026-11-08T07:30:00+09:00">2026年11月8日</time></span>
+        <span class="title" style="display:block">ふるさと納税の確定申告、証明書 1 枚で 5 ステップ</span>
+        <span class="excerpt" style="display:-webkit-box">自治体ごとの受領証明書を集めなくても、ポータルの「寄附金控除に関する証明書」でまとめて申告できます</span>
+      </span>
+    </a></li>
+    
+  </ul>
+</section>
+
+</div>
+  
+  <aside class="sidebar">
+    
+    <section class="box">
+      <h3>新着記事</h3>
+      <ul class="mini">
+        
+        <li><a href="/posts/2026-11-08-nisa-vs-tokutei-kouza/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-nisa-vs-tokutei-kouza/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">NISA 口座と特定口座、税金の違い 5 点</span><span class="meta"><time datetime="2026-11-08T12:30:00+09:00">2026年11月8日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-08-furusato-shomeisho-kakutei/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-08-furusato-shomeisho-kakutei/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">ふるさと納税の確定申告、証明書 1 枚で 5 ステップ</span><span class="meta"><time datetime="2026-11-08T07:30:00+09:00">2026年11月8日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-nisa-tsumitate-henkou/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-nisa-tsumitate-henkou/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">NISA の積立額、変える・止めるの手順</span><span class="meta"><time datetime="2026-11-07T19:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-furusato-fufu-son3/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-furusato-fufu-son3/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">ふるさと納税、夫婦で損する 3 つ</span><span class="meta"><time datetime="2026-11-07T12:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-07-ideco-moshikomi-5steps/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-07-ideco-moshikomi-5steps/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">iDeCo、申込から掛金開始までの 5 ステップ</span><span class="meta"><time datetime="2026-11-07T07:30:00+09:00">2026年11月7日</time></span></span></a></li>
+        
+      </ul>
+    </section>
+    
+    
+    <section class="box">
+      <h3>トピック</h3>
+      <ul class="taglist"><li><a href="/topics/furusato/">ふるさと納税<span class="n">7</span></a></li><li><a href="/topics/nencho/">年末調整・確定申告<span class="n">2</span></a></li><li><a href="/topics/ideco/">iDeCo<span class="n">1</span></a></li><li><a href="/topics/nisa/">新NISA・証券口座<span class="n">6</span></a></li></ul>
+    </section>
+    
+    
+    <section class="cta-box">
+      <p class="kicker">はじめの一歩</p>
+      <p>手続きの記事を読んだら、口座開設から。</p>
+      <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank"><span class="pr">PR</span>証券口座を開く（松井証券） →</a>
+      <p class="fine">広告（PR）です。条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
+    
+    <section class="box">
+      <h3>このサイトについて</h3>
+      <p style="margin:0;font-size:14px">新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。制度の数字・期限は金融庁・国税庁・総務省などの一次情報にもとづき、各記事に出典を示しています。</p>
+      <p style="margin:8px 0 0;font-size:14px"><a href="/about/">運営者情報・広告の方針 →</a></p>
+    </section>
+  </aside>
+  
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>家計と制度のメモ</h4>
+      <p style="margin:0">新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。Instagram / Threads に投稿した内容を、記事としても読めるようにしています。</p>
+      <p style="margin:8px 0 0">当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。</p>
+    </div>
+    <div>
+      <h4>トピック</h4>
+      <ul><li><a href="/topics/furusato/">ふるさと納税</a></li><li><a href="/topics/nencho/">年末調整・確定申告</a></li><li><a href="/topics/ideco/">iDeCo</a></li><li><a href="/topics/nisa/">新NISA・証券口座</a></li><li><a href="/posts/">記事一覧</a></li></ul>
+    </div>
+    <div>
+      <h4>サイト情報</h4>
+      <ul><li><a href="/about/">運営者情報</a></li><li><a href="/about/#pr">広告（PR）について</a></li><li><a href="/about/#disclaimer">免責事項</a></li><li><a href="/">Instagram のリンク集</a></li></ul>
+    </div>
+    <p class="copy">© 2026 株式会社B　最終更新: 2026-11-08</p>
+  </div>
+</footer>
 </body>
 </html>
