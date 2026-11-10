@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ja">
 <head>
@@ -143,12 +144,20 @@ main.layout.single-column { grid-template-columns: minmax(0, 1fr); }
 .button:hover { background: var(--accent-ink); }
 .button .pr { color: #fff; flex: none; margin-right: 0; }
 .button .arrow { margin-left: auto; flex: none; }
+/* ASP 指定の文言をそのまま出すリンク（_ad.html）。<a> には class を付けず、親要素から整える */
+.ad-name { margin: 0 0 8px !important; font-size: 13px !important; font-weight: 700; }
+.ad-official { position: relative; }
+.ad-official > a { position: relative; display: flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 5px; padding: 16px 18px; min-height: 56px; }
+.ad-official > a:hover { background: var(--accent-ink); }
+.ad-official > a::after { content: "↗"; margin-left: auto; flex: none; }
+.ad-official img { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; border: 0; }
 .cta-box .fine, .fine { margin: 14px 0 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
 .later { margin: 0; color: var(--muted); font-size: 14px; line-height: 2; }
 .sidebar .cta-box { padding: 24px 20px; }
 .sidebar .cta-box p { font-size: 13px; }
 .sidebar .cta-box .fine { font-size: 10px; }
 .sidebar .button { font-size: 12px; padding: 14px 12px; }
+.sidebar .ad-official > a { font-size: 12px; padding: 14px 12px; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); background: #eeefea; color: var(--muted); font-size: 12px; }
@@ -397,7 +406,15 @@ article.post { background: var(--card); border: 1px solid var(--line); border-ra
   
   <div class="cta-wrap">
     
-    <section class="box"><p class="later">関連する手続きの案内は準備中です。手続きは各公式サイトから行えます。</p></section>
+    <section class="cta-box">
+      <p class="kicker">NEXT STEP / 次の一歩</p>
+      <h2>手続きは、公式サイトから。</h2>
+      <p>申込の条件や手数料など、最新の情報をご確認ください。</p>
+      <p class="ad-name"><span class="pr">PR</span>証券口座を開く（松井証券）</p>
+<div class="ad-official"><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51NRU+3XCC+64C3M" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">松井証券</a>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BGAV2+E51NRU+3XCC+64C3M" alt=""></div>
+      <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
     
   </div>
 
@@ -503,7 +520,9 @@ article.post { background: var(--card); border: 1px solid var(--line); border-ra
     <section class="cta-box">
       <p class="kicker">はじめの一歩</p>
       <p>手続きの記事を読んだら、口座開設から。</p>
-      <a class="button" href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51N02+3XCC+64C3M" rel="nofollow sponsored noopener" target="_blank"><span class="pr">PR</span>証券口座を開く（松井証券）<span class="arrow" aria-hidden="true">↗</span></a>
+      <p class="ad-name"><span class="pr">PR</span>証券口座を開く（松井証券）</p>
+<div class="ad-official"><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51NRU+3XCC+64C3M" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">松井証券</a>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BGAV2+E51NRU+3XCC+64C3M" alt=""></div>
       <p class="fine">広告（PR）です。条件・手数料は各公式サイトでご確認ください。</p>
     </section>
     
