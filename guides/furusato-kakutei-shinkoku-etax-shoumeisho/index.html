@@ -1,0 +1,551 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ふるさと納税を確定申告する手順（証明書 XML と e-Tax） | 家計と制度のメモ</title>
+<meta name="description" content="ふるさと納税を確定申告で控除する手順です。申告が必要になる人、受領証明書と「寄附金控除に関する証明書」の違い、XML の取得とマイナポータル連携、作成コーナーの入力、期限を公式の記載で整理しました。">
+<link rel="canonical" href="https://kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="家計と制度のメモ">
+<meta property="og:title" content="ふるさと納税を確定申告する手順（証明書 XML と e-Tax）">
+<meta property="og:description" content="ふるさと納税を確定申告で控除する手順です。申告が必要になる人、受領証明書と「寄附金控除に関する証明書」の違い、XML の取得とマイナポータル連携、作成コーナーの入力、期限を公式の記載で整理しました。">
+<meta property="og:url" content="https://kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/">
+<meta property="og:image" content="https://kakei-seido.com/brand/icon-512.png">
+<meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2026-11-14T07:00:00+09:00">
+<meta property="article:modified_time" content="2026-11-14T07:00:00+09:00">
+<meta property="article:section" content="ふるさと納税">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ふるさと納税を確定申告する手順（証明書 XML と e-Tax）">
+<meta name="twitter:description" content="ふるさと納税を確定申告で控除する手順です。申告が必要になる人、受領証明書と「寄附金控除に関する証明書」の違い、XML の取得とマイナポータル連携、作成コーナーの入力、期限を公式の記載で整理しました。">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "articleSection": "\u3075\u308b\u3055\u3068\u7d0d\u7a0e", "author": {"@type": "Organization", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "url": "https://kakei-seido.com/about/"}, "dateModified": "2026-11-14T07:00:00+09:00", "datePublished": "2026-11-14T07:00:00+09:00", "description": "\u3075\u308b\u3055\u3068\u7d0d\u7a0e\u3092\u78ba\u5b9a\u7533\u544a\u3067\u63a7\u9664\u3059\u308b\u624b\u9806\u3067\u3059\u3002\u7533\u544a\u304c\u5fc5\u8981\u306b\u306a\u308b\u4eba\u3001\u53d7\u9818\u8a3c\u660e\u66f8\u3068\u300c\u5bc4\u9644\u91d1\u63a7\u9664\u306b\u95a2\u3059\u308b\u8a3c\u660e\u66f8\u300d\u306e\u9055\u3044\u3001XML \u306e\u53d6\u5f97\u3068\u30de\u30a4\u30ca\u30dd\u30fc\u30bf\u30eb\u9023\u643a\u3001\u4f5c\u6210\u30b3\u30fc\u30ca\u30fc\u306e\u5165\u529b\u3001\u671f\u9650\u3092\u516c\u5f0f\u306e\u8a18\u8f09\u3067\u6574\u7406\u3057\u307e\u3057\u305f\u3002", "headline": "\u3075\u308b\u3055\u3068\u7d0d\u7a0e\u3092\u78ba\u5b9a\u7533\u544a\u3059\u308b\u624b\u9806\uff08\u8a3c\u660e\u66f8 XML \u3068 e-Tax\uff09", "mainEntityOfPage": "https://kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/", "publisher": {"@type": "Organization", "logo": {"@type": "ImageObject", "url": "https://kakei-seido.com/brand/icon-512.png"}, "name": "\u682a\u5f0f\u4f1a\u793eB"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "\u78ba\u5b9a\u7533\u544a\u3092\u3059\u308b\u3068\u30ef\u30f3\u30b9\u30c8\u30c3\u30d7\u7279\u4f8b\u306e\u7533\u8acb\u306f\u7121\u52b9\u306b\u306a\u308b\u305f\u3081\u3001\u7279\u4f8b\u3092\u7533\u8acb\u3057\u305f\u5206\u3082\u542b\u3081\u3066\u3001\u305d\u306e\u5e74\u306e\u3059\u3079\u3066\u306e\u3075\u308b\u3055\u3068\u7d0d\u7a0e\u3092\u78ba\u5b9a\u7533\u544a\u306e\u5bc4\u9644\u91d1\u63a7\u9664\u306b\u5165\u308c\u307e\u3059\u3002\u81ea\u6cbb\u4f53\u3078\u306e\u9023\u7d61\u306f\u4e0d\u8981\u3067\u3059\u3002"}, "name": "\u30ef\u30f3\u30b9\u30c8\u30c3\u30d7\u7279\u4f8b\u306e\u7533\u8acb\u3092\u3057\u305f\u3042\u3068\u3067\u3001\u533b\u7642\u8cbb\u63a7\u9664\u306e\u305f\u3081\u306b\u78ba\u5b9a\u7533\u544a\u3059\u308b\u3053\u3068\u306b\u306a\u308a\u307e\u3057\u305f\u3002\u3075\u308b\u3055\u3068\u7d0d\u7a0e\u306f\u3069\u3046\u306a\u308a\u307e\u3059\u304b\u3002"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "XML \u3092\u305d\u306e\u307e\u307e\u5370\u5237\u3057\u305f\u3082\u306e\u306f\u4f7f\u3048\u307e\u305b\u3093\u3002\u56fd\u7a0e\u5e81\u306e\u300cQR\u30b3\u30fc\u30c9\u4ed8\u8a3c\u660e\u66f8\u7b49\u4f5c\u6210\u30b7\u30b9\u30c6\u30e0\u300d\u3067 XML \u3092\u8aad\u307f\u8fbc\u3093\u3067\u51fa\u529b\u3057\u305f\u66f8\u985e\u3092\u6dfb\u4ed8\u3057\u307e\u3059\u3002e-Tax \u306a\u3089\u5370\u5237\u306f\u4e0d\u8981\u3067\u3059\u3002"}, "name": "\u8a3c\u660e\u66f8\u306e XML \u3092\u5370\u5237\u3057\u3066\u7a0e\u52d9\u7f72\u306b\u6301\u3063\u3066\u3044\u3051\u307e\u3059\u304b\u3002"}, {"@type": "Question", "acceptedAnswer": {"@type": "Answer", "text": "\u307e\u3068\u307e\u308a\u307e\u305b\u3093\u3002\u300c\u5bc4\u9644\u91d1\u63a7\u9664\u306b\u95a2\u3059\u308b\u8a3c\u660e\u66f8\u300d\u306f\u30b5\u30a4\u30c8\u3054\u3068\u306b\u3001\u305d\u306e\u30b5\u30a4\u30c8\u3067\u306e\u5bc4\u9644\u3060\u3051\u304c\u8a18\u8f09\u3055\u308c\u307e\u3059\u3002\u30b5\u30a4\u30c8\u3054\u3068\u306b\u53d6\u5f97\u3057\u3066\u3001\u305d\u308c\u305e\u308c\u8aad\u307f\u8fbc\u307f\u307e\u3059\u3002"}, "name": "\u8907\u6570\u306e\u30dd\u30fc\u30bf\u30eb\u30b5\u30a4\u30c8\u3067\u5bc4\u9644\u3057\u307e\u3057\u305f\u3002\u8a3c\u660e\u66f8\u306f 1 \u679a\u306b\u307e\u3068\u307e\u308a\u307e\u3059\u304b\u3002"}]}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://kakei-seido.com/posts/", "name": "\u5bb6\u8a08\u3068\u5236\u5ea6\u306e\u30e1\u30e2", "position": 1}, {"@type": "ListItem", "item": "https://kakei-seido.com/topics/furusato/", "name": "\u3075\u308b\u3055\u3068\u7d0d\u7a0e", "position": 2}, {"@type": "ListItem", "item": "https://kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/", "name": "\u3075\u308b\u3055\u3068\u7d0d\u7a0e\u3092\u78ba\u5b9a\u7533\u544a\u3059\u308b\u624b\u9806\uff08\u8a3c\u660e\u66f8 XML \u3068 e-Tax\uff09", "position": 3}]}</script>
+
+<meta name="theme-color" content="#f7f6f2">
+<link rel="icon" type="image/png" sizes="192x192" href="/brand/icon-192.png">
+<link rel="apple-touch-icon" href="/brand/icon-512.png">
+<style>
+:root {
+  --bg: #f7f6f2; --ink: #203344; --muted: #5c6871; --faint: #657078; --card: #fff;
+  --accent: #285de3; --accent-ink: #204db9; --accent-soft: #edf2fc; --line: #dedfdc; --line-soft: #eeefeb;
+  --warn: #9d442b; --warn-soft: #fbefe7; --ok: #216550; --ok-soft: #eaf4ee;
+  --radius: 8px; --shadow: 0 8px 28px -20px rgba(32,51,68,.22);
+  --serif: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif CJK JP", serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 32px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Noto Sans CJK JP", "Yu Gothic", sans-serif; line-height: 1.8; -webkit-font-smoothing: antialiased; overflow-wrap: anywhere; }
+a { color: var(--accent-ink); text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: 2px; }
+a, summary { -webkit-tap-highlight-color: rgba(40,93,227,.12); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+.skip-link { position: absolute; top: -100px; left: 20px; z-index: 50; padding: 12px 20px; background: var(--ink); color: #fff; }
+.skip-link:focus { top: 8px; }
+.kicker { font-size: 11px; font-weight: 700; letter-spacing: .16em; color: var(--accent-ink); margin: 0 0 12px; }
+
+/* Masthead: the navigation stays in normal flow so it never covers the text. */
+.site-header { background: var(--card); border-top: 4px solid var(--ink); border-bottom: 1px solid var(--line); }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 92px; }
+.logo { display: inline-flex; align-items: center; gap: 13px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 24px; letter-spacing: .04em; }
+.logo img { width: 42px; height: 42px; border-radius: 10px; flex: none; }
+.brand-caption { display: block; font-size: 10px; color: var(--muted); font-weight: 500; letter-spacing: .12em; margin-bottom: 1px; }
+.header-note { font-size: 12px; color: var(--muted); margin: 0; text-align: right; }
+.header-note a { color: inherit; }
+.nav-row { border-top: 1px solid var(--line-soft); }
+.gnav { display: flex; gap: 28px; overflow-x: auto; scrollbar-width: thin; }
+.gnav a { flex: none; white-space: nowrap; color: var(--muted); text-decoration: none; font-size: 13px; font-weight: 700; padding: 14px 2px 12px; border-bottom: 3px solid transparent; }
+.gnav a:hover, .gnav a.on { color: var(--accent-ink); border-color: var(--accent); }
+
+/* Shared page frame. A bounded sidebar leaves an ample reading column. */
+main.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; padding-top: 28px; padding-bottom: 72px; }
+.main-col { min-width: 0; }
+.sidebar { display: grid; gap: 28px; align-content: start; min-width: 0; }
+@media (min-width: 1100px) { main.layout { grid-template-columns: minmax(0, 1fr) 252px; gap: 40px; } .sidebar { padding-top: 42px; } }
+main.layout.single-column { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 700px) and (max-width: 1099px) { .sidebar { grid-template-columns: 1fr 1fr; } }
+.crumbs { font-size: 11px; color: var(--muted); margin: 0 0 28px; }
+.crumbs ol { display: flex; gap: 6px 10px; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
+.crumbs a { color: inherit; text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.crumbs li + li::before { content: "/"; color: var(--faint); margin-right: 10px; }
+.chip { display: inline-block; font-size: 11px; font-weight: 700; color: var(--accent-ink); background: var(--accent-soft); border-radius: 3px; padding: 3px 8px; line-height: 1.6; text-decoration: none; }
+.chip.type-sonsuru { color: var(--warn); background: var(--warn-soft); }
+.chip.type-hikaku { color: var(--ok); background: var(--ok-soft); }
+.pr { display: inline-block; font-size: 10px; font-weight: 700; border: 1px solid currentColor; color: var(--muted); border-radius: 3px; padding: 1px 5px; margin-right: 8px; vertical-align: middle; line-height: 1.5; }
+.meta { color: var(--muted); font-size: 11px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.meta time { font-variant-numeric: tabular-nums; }
+.box { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.box h2, .box h3 { margin: 0 0 18px; font-size: 15px; letter-spacing: .04em; }
+.sec-title { font-size: 21px; margin: 0 0 24px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; letter-spacing: .03em; }
+.sec-title a { font-size: 12px; font-weight: 500; text-decoration: none; }
+.section-label { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin: 0 0 18px; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+.section-label h2 { font-size: 15px; margin: 0; }
+.section-label span { font-size: 10px; color: var(--muted); letter-spacing: .1em; }
+
+/* Each card has a single link. Portrait slides are shown whole, never cropped. */
+.grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; grid-template-columns: 1fr 1fr; }
+.grid > li { min-width: 0; }
+.post-card { display: flex; flex-direction: column; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; color: inherit; text-decoration: none; transition: border-color .16s ease, box-shadow .16s ease; }
+.post-card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.post-card .thumb { display: flex; align-items: center; justify-content: center; height: 200px; background: #ecefea; padding: 16px; border-bottom: 1px solid var(--line-soft); }
+.post-card .thumb img { width: auto; height: 100%; aspect-ratio: 4 / 5; object-fit: contain; display: block; box-shadow: 0 3px 12px rgba(32,51,68,.08); }
+.card-copy { display: flex; flex-direction: column; flex: 1; padding: 22px; }
+.post-card .title { display: block; font-weight: 700; font-size: 19px; line-height: 1.65; margin: 12px 0 8px; }
+.post-card:hover .title { color: var(--accent-ink); }
+.post-card .excerpt { color: var(--muted); font-size: 13px; line-height: 1.85; margin: 0 0 18px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; color: var(--muted); font-size: 11px; }
+.card-arrow { color: var(--accent-ink); font-size: 20px; line-height: 1; }
+
+.thumb-text { position: relative; }
+.thumb-label { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 100%; min-height: 100%; background: linear-gradient(160deg, #e8eef9, #d7e1f3); color: var(--accent-ink); font-weight: 700; font-size: 13px; text-align: center; padding: 10px; border-radius: 2px; line-height: 1.4; }
+.thumb-label > span { font-size: 9px; letter-spacing: .18em; color: var(--muted); font-weight: 700; }
+.post-card .thumb.thumb-text .thumb-label { width: 120px; aspect-ratio: 4 / 5; height: auto; box-shadow: 0 3px 12px rgba(32,51,68,.08); }
+.mini .thumb.thumb-text { border: 0; }
+.mini .thumb-label { font-size: 9px; gap: 2px; padding: 4px; }
+.mini .thumb-label > span { display: none; }
+.feature-art.thumb-text { display: flex; align-items: center; justify-content: center; }
+.feature-art .thumb-label { width: 176px; aspect-ratio: 4 / 5; height: auto; font-size: 15px; box-shadow: 0 6px 22px rgba(32,51,68,.09); }
+@media (max-width: 699px) { .post-card .thumb.thumb-text .thumb-label { width: 80px; font-size: 10px; padding: 6px; } .post-card .thumb.thumb-text .thumb-label > span { display: none; } }
+/* Compact article lists and topic navigation. */
+.mini { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.mini li + li { border-top: 1px solid var(--line-soft); padding-top: 18px; }
+.mini a { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; color: inherit; text-decoration: none; align-items: start; }
+.mini .thumb { display: block; aspect-ratio: 4 / 5; background: var(--line-soft); border: 1px solid var(--line-soft); }
+.mini .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.mini .title { display: block; font-weight: 600; font-size: 12px; line-height: 1.8; }
+.mini .meta { font-size: 10px; margin-top: 5px; }
+.mini a:hover .title { color: var(--accent-ink); }
+.taglist { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.taglist a { display: inline-flex; gap: 8px; align-items: center; font-size: 12px; font-weight: 600; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 9px 12px; text-decoration: none; }
+.taglist a:hover, .taglist a.on { border-color: var(--ink); color: #fff; background: var(--ink); }
+.taglist .n { color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+.taglist a.on .n, .taglist a:hover .n { color: #e3e9ee; }
+.topic-menu { list-style: none; margin: 0; padding: 0; }
+.topic-menu a { display: flex; justify-content: space-between; gap: 12px; padding: 13px 0; border-top: 1px solid var(--line-soft); text-decoration: none; color: var(--ink); font-size: 12px; }
+.topic-menu a:hover { color: var(--accent-ink); }
+.topic-menu span { color: var(--muted); font-size: 11px; }
+.editor-note { border-top: 3px solid var(--ink); }
+.editor-note p { font-size: 12px; margin: 0; line-height: 2; color: var(--muted); }
+.editor-note p + p { margin-top: 16px; }
+
+/* The next step is visually separate from the article and its sources. */
+.cta-box { background: var(--accent-soft); border: 1px solid #d2dcf1; border-top: 3px solid var(--accent); border-radius: var(--radius); padding: 28px; }
+.cta-box .kicker { margin: 0 0 10px; font-size: 11px; }
+.cta-box p { margin: 0 0 16px; font-size: 15px; }
+.cta-box h2 { font-size: 22px; line-height: 1.6; margin: 0 0 12px; }
+.button { display: flex; align-items: center; justify-content: center; gap: 8px; background: var(--accent); color: #fff; text-decoration: none; text-align: center; font-weight: 700; font-size: 15px; border-radius: 5px; padding: 16px 18px; min-height: 56px; }
+.button:hover { background: var(--accent-ink); }
+.button .pr { color: #fff; flex: none; margin-right: 0; }
+.button .arrow { margin-left: auto; flex: none; }
+/* ASP 指定の文言をそのまま出すリンク（_ad.html）。<a> には class を付けず、親要素から整える */
+.ad-name { margin: 0 0 8px !important; font-size: 13px !important; font-weight: 700; }
+.ad-official { position: relative; }
+.ad-official > a { position: relative; display: flex; align-items: center; gap: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 5px; padding: 16px 18px; min-height: 56px; }
+.ad-official > a:hover { background: var(--accent-ink); }
+.ad-official > a::after { content: "↗"; margin-left: auto; flex: none; }
+.ad-official img { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; border: 0; }
+.cta-box .fine, .fine { margin: 14px 0 0; color: var(--muted); font-size: 11px; line-height: 1.9; }
+.later { margin: 0; color: var(--muted); font-size: 14px; line-height: 2; }
+.sidebar .cta-box { padding: 24px 20px; }
+.sidebar .cta-box p { font-size: 13px; }
+.sidebar .cta-box .fine { font-size: 10px; }
+.sidebar .button { font-size: 12px; padding: 14px 12px; }
+.sidebar .ad-official > a { font-size: 12px; padding: 14px 12px; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); background: #eeefea; color: var(--muted); font-size: 12px; }
+.site-footer .wrap { padding-top: 48px; padding-bottom: 24px; display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 32px 56px; }
+.site-footer h2 { margin: 0 0 16px; font-size: 13px; color: var(--ink); }
+.site-footer .footer-brand { font-size: 19px; font-family: var(--serif); }
+.site-footer p { margin: 0; }
+.site-footer p + p { margin-top: 12px; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.site-footer a { color: inherit; text-decoration: none; }
+.site-footer a:hover { color: var(--accent-ink); text-decoration: underline; }
+.site-footer .copy { grid-column: 1 / -1; border-top: 1px solid #d6dad4; padding-top: 20px; margin-top: 0; font-size: 10px; }
+@media (max-width: 699px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+  .masthead { min-height: 72px; }
+  .logo { font-size: 18px; gap: 10px; letter-spacing: .02em; }
+  .logo img { width: 36px; height: 36px; border-radius: 8px; }
+  .brand-caption { font-size: 9px; }
+  .header-note { display: none; }
+  .gnav { gap: 22px; }
+  .gnav a { font-size: 12px; padding-top: 10px; padding-bottom: 8px; }
+  main.layout { padding-top: 16px; padding-bottom: 40px; gap: 32px; }
+  .crumbs { margin-bottom: 20px; font-size: 10px; }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 0; border-top: 1px solid var(--line); }
+  .post-card { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 14px; padding: 20px 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; }
+  .post-card .thumb { height: 100px; padding: 0; border: 0; align-self: start; }
+  .post-card .thumb img { width: 80px; height: 100px; box-shadow: none; }
+  .card-copy { padding: 0; }
+  .post-card .title { font-size: 15px; line-height: 1.6; margin: 8px 0; }
+  .post-card .excerpt { display: none; }
+  .post-card:hover { box-shadow: none; }
+  .sec-title { font-size: 20px; }
+  .sidebar { gap: 20px; }
+  .sidebar .mini .title { font-size: 13px; }
+  .site-footer .wrap { grid-template-columns: 1fr 1fr; gap: 28px 20px; padding-top: 36px; }
+  .footer-intro { grid-column: 1 / -1; }
+  .cta-box { padding: 24px 20px; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+
+article.post { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 44px 48px; }
+.post-head { padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.post-head .meta { margin: 0 0 20px; }
+.post-head h1 { font-family: var(--serif); font-size: 32px; line-height: 1.65; margin: 0 0 20px; letter-spacing: .025em; }
+.post-head .lead { font-size: 16px; color: var(--ink); margin: 0 0 24px; line-height: 2; white-space: pre-line; }
+.byline { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 11px; color: var(--muted); margin-bottom: 16px; }
+.pr-note { font-size: 11px; color: var(--muted); margin: 0; }
+.toc { border: 1px solid #d3dcec; background: #f6f8fc; border-radius: 6px; padding: 24px 28px; margin: 28px 0 16px; }
+.toc-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid #d3dcec; padding-bottom: 14px; margin-bottom: 12px; }
+.toc h2 { font-size: 16px; margin: 0; }
+.toc-heading > span { font-size: 10px; letter-spacing: .12em; color: var(--muted); }
+.toc ol { list-style: none; margin: 0; padding: 0; counter-reset: contents; }
+.toc li { counter-increment: contents; }
+.toc a { display: flex; align-items: baseline; gap: 14px; color: var(--ink); text-decoration: none; padding: 9px 0; font-size: 14px; line-height: 1.7; }
+.toc a::before { content: counter(contents, decimal-leading-zero); color: var(--accent-ink); font-size: 11px; font-weight: 700; flex: none; font-variant-numeric: tabular-nums; }
+.toc a:hover { color: var(--accent-ink); text-decoration: underline; }
+.body { counter-reset: sections; }
+.body section { margin: 48px 0 0; scroll-margin-top: 28px; counter-increment: sections; }
+.body h2 { font-size: 22px; line-height: 1.7; margin: 0 0 22px; padding: 0 0 16px; border-bottom: 1px solid var(--line); position: relative; }
+.body h2::before { content: counter(sections, decimal-leading-zero); display: block; color: var(--accent-ink); font-size: 12px; letter-spacing: .08em; margin-bottom: 8px; }
+.body h2::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 44px; height: 3px; background: var(--accent); }
+.body p { margin: 0 0 18px; font-size: 17px; line-height: 2.05; letter-spacing: .025em; }
+.body ul, .body ol { margin: 0 0 18px; padding-left: 26px; font-size: 16px; line-height: 1.95; }
+.body li { margin: 6px 0; }
+.body .note { margin: 20px 0 0; background: #fbf7ec; border-left: 4px solid #e2b85a; padding: 14px 18px; font-size: 14px; line-height: 1.9; color: var(--ink); border-radius: 0 6px 6px 0; }
+.body .note::before { content: "補足"; display: block; font-size: 10px; letter-spacing: .14em; color: #9a7a2a; font-weight: 700; margin-bottom: 4px; }
+.tbl { width: 100%; border-collapse: collapse; margin: 6px 0 20px; font-size: 14px; line-height: 1.7; }
+.tbl th, .tbl td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+.tbl th { background: #f3f5f9; font-weight: 700; white-space: nowrap; }
+.tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.faq { margin: 44px 0 0; }
+.faq h2 { font-size: 20px; margin: 0 0 16px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 700; font-size: 15px; line-height: 1.8; padding: 16px 28px 16px 0; list-style: none; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: 14px; color: var(--accent-ink); font-size: 18px; }
+.faq details[open] summary::after { content: "−"; }
+.faq .faq-a { margin: 0 0 18px; font-size: 15px; line-height: 1.95; color: var(--ink); white-space: pre-line; }
+.summary-box { margin: 44px 0 0; background: #f3f4ee; border: 1px solid #e1e5d9; border-radius: 6px; padding: 28px; }
+.summary-box h2 { font-size: 18px; margin: 0 0 16px; }
+.summary-box ul { list-style: none; margin: 0; padding: 0; font-size: 14px; display: grid; gap: 12px; }
+.summary-box li { position: relative; padding-left: 24px; }
+.summary-box li::before { content: "✓"; position: absolute; left: 0; color: var(--ok); font-weight: 700; }
+.cta-wrap { margin: 32px 0 0; }
+.cta-box .lead-in { margin: 0 0 14px; font-size: 15px; line-height: 1.9; }
+.disclaimer { margin: 16px 0 0; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.sources { margin: 36px 0 0; padding-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 28px; }
+.sources h2 { font-size: 16px; margin: 0 0 16px; }
+.sources ol { margin: 0; padding-left: 22px; font-size: 12px; }
+.sources li { padding-left: 4px; margin: 10px 0; }
+.sources a { overflow-wrap: anywhere; }
+.notice { margin: 22px 0 0; color: var(--muted); font-size: 12px; line-height: 1.9; }
+.author { margin: 28px 0 0; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; align-items: start; border-top: 1px solid var(--line); padding-top: 24px; font-size: 12px; }
+.author img { width: 40px; height: 40px; border-radius: 9px; }
+.author p { margin: 0; color: var(--muted); line-height: 1.9; }
+.author strong { color: var(--ink); display: block; margin-bottom: 6px; font-size: 13px; }
+.share { margin: 24px 0 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.share a { display: inline-flex; align-items: center; min-height: 44px; font-size: 11px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 4px; padding: 9px 12px; text-decoration: none; }
+.share a:hover { border-color: var(--accent); color: var(--accent-ink); }
+.pager { margin: 28px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pager a { display: block; border-top: 1px solid var(--line); padding: 16px 0; color: inherit; text-decoration: none; font-size: 13px; }
+.pager a:hover { color: var(--accent-ink); border-color: var(--accent); }
+.pager .dir { display: block; font-size: 10px; color: var(--muted); margin-bottom: 8px; }
+.pager .next { text-align: right; }
+.related { margin: 40px 0 0; }
+.reading-nav { border-top: 3px solid var(--accent); }
+.reading-nav ol { padding: 0; margin: 0; list-style: none; counter-reset: sidenav; }
+.reading-nav li { counter-increment: sidenav; }
+.reading-nav li a { display: flex; align-items: baseline; gap: 10px; color: var(--muted); text-decoration: none; font-size: 11px; padding: 8px 0; }
+.reading-nav li a::before { content: counter(sidenav, decimal-leading-zero); color: var(--accent-ink); font-size: 10px; flex: none; }
+.reading-nav a:hover { color: var(--accent-ink); text-decoration: underline; }
+.reading-nav .source-link { display: block; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; text-decoration: none; }
+@media (max-width: 1099px) { .reading-nav { display: none; } }
+@media (max-width: 699px) {
+  body { background: var(--card); }
+  article.post { padding: 0; margin: 0; border: 0; border-radius: 0; }
+  .post-head { padding-bottom: 18px; }
+  .post-head h1 { font-family: inherit; font-size: 22px; line-height: 1.45; letter-spacing: 0; margin-bottom: 14px; }
+  .post-head .meta { gap: 6px; margin-bottom: 12px; }
+  .post-head .lead { font-size: 15px; line-height: 1.85; margin-bottom: 14px; }
+  .byline { font-size: 11px; gap: 4px 10px; margin-bottom: 10px; }
+  .toc { padding: 16px; margin: 20px 0 0; }
+  .toc-heading { padding-bottom: 10px; margin-bottom: 6px; }
+  .toc h2 { font-size: 14px; }
+  .toc a { font-size: 13px; line-height: 1.6; padding: 7px 0; gap: 8px; }
+  .toc a::before { content: none; }
+  .body section { margin-top: 28px; }
+  .body h2 { font-size: 18px; line-height: 1.5; margin-bottom: 14px; padding-bottom: 10px; }
+  .body h2::before { content: none; }
+  .body h2::after { width: 32px; height: 2px; }
+  .body p { font-size: 15px; line-height: 1.9; letter-spacing: 0; margin-bottom: 14px; }
+  .body ul, .body ol { font-size: 15px; padding-left: 22px; }
+  .tbl { font-size: 13px; }
+  .tbl th, .tbl td { padding: 8px 10px; }
+  .faq summary { font-size: 14px; }
+  .faq .faq-a { font-size: 14px; }
+  .summary-box { margin-top: 28px; padding: 20px 16px; }
+  .summary-box ul { font-size: 13px; }
+  .cta-box h2 { font-size: 18px; }
+  .button { font-size: 14px; }
+  .pager { gap: 20px; }
+  .pager a { font-size: 12px; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">本文へ移動</a>
+<header class="site-header">
+  <div class="wrap masthead">
+    <a class="logo" href="/posts/"><img src="/brand/icon-192.png" alt="" width="42" height="42"><span><span class="brand-caption">手続きと期限を、ひとつずつ。</span>家計と制度のメモ</span></a>
+    <p class="header-note">一次情報から、暮らしの制度を読み解く。<br><a href="/about/">このメディアについて ↗</a></p>
+  </div>
+  <div class="nav-row"><nav class="wrap gnav" aria-label="トピック">
+    <a href="/posts/">記事一覧</a>
+    <a href="/topics/furusato/" class="on" aria-current="true">ふるさと納税</a><a href="/topics/nencho/">年末調整・確定申告</a><a href="/topics/ideco/">iDeCo</a><a href="/topics/nisa/">新NISA・証券口座</a>
+    <a href="/about/">運営者情報</a>
+  </nav></div>
+</header>
+
+<main id="main-content" tabindex="-1" class="wrap layout">
+  <div class="main-col">
+<nav class="crumbs" aria-label="パンくず"><ol><li><a href="/posts/">家計と制度のメモ</a></li><li><a href="/topics/furusato/">ふるさと納税</a></li><li aria-current="page">ふるさと納税を確定申告する手順（証明書 XML と e-Tax）</li></ol></nav>
+<article class="post">
+  <header class="post-head">
+    <p class="meta"><a class="chip" href="/topics/furusato/">ふるさと納税</a><span class="chip type-tejun">手続きガイド</span></p>
+    <h1>ふるさと納税を確定申告する手順（証明書 XML と e-Tax）</h1>
+    <p class="lead">ふるさと納税の控除は、ワンストップ特例を使えない人や、医療費控除などでもともと確定申告をする人は、確定申告で受けます。2021 年分以降は、自治体ごとの受領証明書を集めなくても、ポータルサイト（特定事業者）が発行する 1 枚の「寄附金控除に関する証明書」で申告できるようになりました。
+この記事では、確定申告が必要になる条件、2 種類の証明書の違い、証明書 XML の取得から e-Tax での提出までの手順、申告期限を、2026 年 11 月 8 日時点の国税庁と au PAY ふるさと納税の公式ガイドの記載で整理します。
+</p>
+    <div class="byline"><span>家計と制度のメモ 編集部</span><time datetime="2026-11-14T07:00:00+09:00">2026年11月14日 公開</time></div>
+    <p class="pr-note">※ この記事には広告（PR）が含まれます。<a href="/about/#pr">広告の方針</a></p>
+  </header>
+
+  <nav class="toc" aria-label="目次">
+    <div class="toc-heading"><h2>この記事の内容</h2><span>CONTENTS</span></div>
+    <ol><li><a href="#g1">確定申告が必要になる人：6 団体以上、ほかの理由で申告する人</a></li><li><a href="#g2">書類は 2 種類：自治体の受領証明書と、特定事業者の「寄附金控除に関する証明書」</a></li><li><a href="#g3">証明書 XML の取得：マイページの寄附履歴から発行する</a></li><li><a href="#g4">方法 A：マイナポータル連携で作成コーナーに自動入力する</a></li><li><a href="#g5">方法 B：XML を作成コーナーで読み込む／受領証明書を手入力する</a></li><li><a href="#g6">申告期限と、過ぎてしまったとき</a></li><li><a href="#faq">よくある質問</a></li></ol>
+  </nav>
+
+  <div class="body">
+  
+  <section id="g1">
+    <h2>確定申告が必要になる人：6 団体以上、ほかの理由で申告する人</h2>
+    <p>国税庁タックスアンサー No.1155 によると、次の人はワンストップ特例を使えず、ふるさと納税を確定申告に含める必要があります。</p><ul><li>1 年間の寄附先が 6 団体以上の人</li><li>医療費控除や雑損控除など、ふるさと納税と関係なく確定申告をする人</li><li>個人事業主、給与収入が 2,000 万円を超える人、給与以外の所得が 20 万円を超える人、年末調整を受けなかった人（au PAY ふるさと納税のガイド）</li></ul><p>重要なのは、ワンストップ特例の申請をしたあとに確定申告をすると、その申請は無効になる点です。確定申告をする場合は、特例を申請した分も含めて、その年のすべてのふるさと納税を寄附金控除に入れます。自治体への連絡は不要です。逆に、確定申告をしたあとでワンストップ特例を申請しても無効です。</p><p>ワンストップ特例を申請したのに、誤って確定申告で寄附金控除に入れなかった場合は、更正の請求で控除を受けられることがあります（国税庁）。</p>
+    
+    
+  </section>
+  
+  <section id="g2">
+    <h2>書類は 2 種類：自治体の受領証明書と、特定事業者の「寄附金控除に関する証明書」</h2>
+    <p>寄附金控除の申告に使える書類は 2 つあり、どちらか一方で申告できます。</p>
+    
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th scope="col">書類</th><th scope="col">発行者</th><th scope="col">形式</th><th scope="col">特徴</th></tr></thead>
+      <tbody><tr><td>寄附金受領証明書</td><td>寄附先の各自治体</td><td>紙（寄附ごとに 1 通）</td><td>従来どおりの方法。寄附した自治体の数だけ集めて保管し、1 件ずつ入力または添付する</td></tr><tr><td>寄附金控除に関する証明書</td><td>国税庁長官が指定した特定事業者（ポータルサイト）</td><td>電子データ（XML）。PDF は不可</td><td>そのサイトでの 1 年分の寄附が 1 枚にまとまる。作成コーナーで読み込むかマイナポータル連携で自動入力。2021 年分の申告から利用可</td></tr></tbody>
+    </table></div>
+    
+    <p class="note">au PAY ふるさと納税（KDDI 株式会社）は、国税庁が公開している特定事業者の一覧に記載されています。複数のポータルサイトを使った人は、サイトごとに証明書を取得します。特定事業者の証明書を使う場合も、自治体から届いた受領証明書は念のため保管しておくよう公式ガイドは案内しています。</p>
+  </section>
+  
+  <section id="g3">
+    <h2>証明書 XML の取得：マイページの寄附履歴から発行する</h2>
+    <p>au PAY ふるさと納税での取得手順は次のとおりです（公式ガイド「寄附金控除に関する証明書」発行サービスのご案内）。</p><ol><li>マイページにログインし、「寄附履歴」を開く</li><li>証明書を発行したい寄附年度を選ぶ</li><li>「発行」を押し、注意事項を確認して XML ファイルをダウンロードする</li></ol><p>取得時の条件として、次の点が公式ガイドに書かれています。</p><ul><li>記載されるのは au PAY ふるさと納税での寄附のみ。ほかのサイトでの寄附は含まれない</li><li>最新の会員情報と、寄附申込時の名義（氏名・住所）が一致する場合のみ出力できる。寄附後に改名した場合は出力されない</li><li>確定申告時の氏名・住所は住民票と同じである必要がある。違う場合は先に会員情報を変更する</li><li>過去 5 年分まで取得できる。郵送での発行はしていない。退会するとダウンロードできない</li></ul><p>XML ファイルはそのまま印刷しても使えません。紙で提出する場合は、国税庁の「QRコード付証明書等作成システム」で XML を読み込み、出力した書類を確定申告書に添付します。</p>
+    
+    
+  </section>
+  
+  <section id="g4">
+    <h2>方法 A：マイナポータル連携で作成コーナーに自動入力する</h2>
+    <p>マイナンバーカードがある人は、証明書の XML を自分でダウンロードしなくても、マイナポータル連携で確定申告書に自動入力できます。</p><ol><li>au PAY ふるさと納税のマイページで、証明書の画面から「マイナポータル連携申請に進む」を選んで申請する（反映まで数日かかるため、申告期間の前に済ませる）</li><li>国税庁の「確定申告書等作成コーナー」で作成を開始し、「マイナポータルと連携する」を選ぶ</li><li>マイナポータルから寄附金控除の証明書データが取得され、寄附金控除の項目に自動入力される</li><li>ほかの所得・控除を入力し、e-Tax で送信する</li></ol><p>必要なものは、マイナンバーカード、署名用・利用者証明用のパスワード、NFC 対応のスマートフォンまたは IC カードリーダーです。会員情報や寄附情報を変更した場合は、連携の再申請が必要です。</p><p>自治体の受領証明書も電子データで取得している場合、同じ寄附が二重に読み込まれることがあります。国税庁のよくある質問では、マイナポータルの「民間送達・e-Tax連携サービス」から自治体マイページに移動し、証明書タイプを「タイプ A：特定事業者分の寄附を含まない」に変更して XML を再生成する方法が案内されています。</p>
+    
+    
+  </section>
+  
+  <section id="g5">
+    <h2>方法 B：XML を作成コーナーで読み込む／受領証明書を手入力する</h2>
+    <p>マイナポータル連携を使わない場合は、作成コーナーで直接入力します。</p><ol><li>確定申告書等作成コーナーで所得税の申告書作成を始める</li><li>「所得控除の入力」画面の「寄附金控除・政党等寄附金等特別控除」を開く</li><li>XML を使う場合：「寄附金受領証明書等の一覧」画面で証明書データ（.xml）を読み込む。寄附金額が自動で入る</li><li>自治体の受領証明書を使う場合：「＋証明書等の内容を入力する」から、寄附年月日・寄附金の種類（都道府県・市区町村に対する寄附）・金額・寄附先の所在地と名称を 1 件ずつ入力する</li><li>入力を終えると控除額が自動計算される</li></ol><p>提出は e-Tax（マイナンバーカード方式または ID・パスワード方式）か、印刷して税務署に郵送・持参します。紙で提出する場合、XML 証明書は QR コード付証明書等作成システムで印刷したものを、受領証明書は原本を添付します。</p><p>国税庁のタックスアンサー No.1155 は、確定申告書第二表の「住民税に関する事項」欄にもふるさと納税額を記載するよう注意しています。作成コーナーで寄附金控除を入力すれば、この欄は自動で埋まります。</p>
+    
+    
+  </section>
+  
+  <section id="g6">
+    <h2>申告期限と、過ぎてしまったとき</h2>
+    <p>所得税の確定申告の期間は、寄附をした翌年の 2 月 16 日から 3 月 15 日までです。2026 年の寄附分は 2027 年 2 月 16 日〜3 月 15 日に申告します。期限が土日祝に当たる年は翌開庁日が期限になります。</p><ul><li>給与所得者で、ふるさと納税の控除を受けるためだけに申告する場合は「還付申告」にあたり、翌年 1 月 1 日から 5 年間提出できます。3 月 15 日を過ぎても受け付けられます</li><li>申告したあとに寄附の記載漏れに気づいた場合、期限内なら訂正申告、期限後なら更正の請求で直します</li><li>返礼品は一時所得にあたります。ほかの一時所得と合わせて年 50 万円の特別控除の範囲内なら課税されません（au PAY ふるさと納税のガイド）</li></ul><p>控除の反映は、所得税分が申告後の還付として、住民税分が翌年 6 月から翌々年 5 月までの住民税の減額として行われます。翌年 6 月ごろの住民税決定通知書で、控除額が寄附額から 2,000 円を引いた金額に近いかを確認します。</p>
+    
+    
+  </section>
+  
+  </div>
+
+  
+  <section class="faq" id="faq">
+    <h2>よくある質問</h2>
+    
+    <details><summary>ワンストップ特例の申請をしたあとで、医療費控除のために確定申告することになりました。ふるさと納税はどうなりますか。</summary><p class="faq-a">確定申告をするとワンストップ特例の申請は無効になるため、特例を申請した分も含めて、その年のすべてのふるさと納税を確定申告の寄附金控除に入れます。自治体への連絡は不要です。</p></details>
+    
+    <details><summary>証明書の XML を印刷して税務署に持っていけますか。</summary><p class="faq-a">XML をそのまま印刷したものは使えません。国税庁の「QRコード付証明書等作成システム」で XML を読み込んで出力した書類を添付します。e-Tax なら印刷は不要です。</p></details>
+    
+    <details><summary>複数のポータルサイトで寄附しました。証明書は 1 枚にまとまりますか。</summary><p class="faq-a">まとまりません。「寄附金控除に関する証明書」はサイトごとに、そのサイトでの寄附だけが記載されます。サイトごとに取得して、それぞれ読み込みます。</p></details>
+    
+  </section>
+  
+
+  <section class="summary-box">
+    <h2>まとめ</h2>
+    <ul><li>確定申告が必要になる人：6 団体以上、ほかの理由で申告する人</li><li>書類は 2 種類：自治体の受領証明書と、特定事業者の「寄附金控除に関する証明書」</li><li>証明書 XML の取得：マイページの寄附履歴から発行する</li><li>方法 A：マイナポータル連携で作成コーナーに自動入力する</li><li>方法 B：XML を作成コーナーで読み込む／受領証明書を手入力する</li><li>申告期限と、過ぎてしまったとき</li></ul>
+  </section>
+
+  <div class="cta-wrap">
+    
+    <section class="cta-box">
+      <p class="kicker">NEXT STEP / 次の一歩</p>
+      <h2>手続きは、公式サイトから。</h2>
+      <p class="lead-in">寄附先をひとつのサイトにまとめておくと、翌年の確定申告で読み込む証明書が 1 枚で済みます。au PAY ふるさと納税は「寄附金控除に関する証明書」の発行とマイナポータル連携に対応しています。</p>
+      <p class="ad-name"><span class="pr">PR</span>ふるさと納税を始める</p>
+<div class="ad-official"><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+EPAECA+54OC+5YJRM" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">au PAY ふるさと納税</a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BGAV2+EPAECA+54OC+5YJRM" alt=""></div>
+      <p class="fine">上のリンクは広告（PR）です。申込の条件・手数料は各公式サイトでご確認ください。</p>
+      <p class="disclaimer">税務上の取り扱いは個人の状況によって異なります。申告の要否や控除額について不明な点は、税務署または住所地の市区町村にご確認ください。</p>
+    </section>
+    
+  </div>
+
+  
+  <section class="sources" id="sources">
+    <h2>出典（一次情報）</h2>
+    <ol><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1155.htm" rel="noopener" target="_blank">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1155.htm</a></li><li><a href="https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei/koujyo/kifukin.htm" rel="noopener" target="_blank">https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei/koujyo/kifukin.htm</a></li><li><a href="https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei/koujyo/kifukin/tokutei.htm" rel="noopener" target="_blank">https://www.nta.go.jp/taxes/shiraberu/shinkoku/kakutei/koujyo/kifukin/tokutei.htm</a></li><li><a href="https://www.keisan.nta.go.jp/r6yokuaru/ocat1/cid656.html" rel="noopener" target="_blank">https://www.keisan.nta.go.jp/r6yokuaru/ocat1/cid656.html</a></li><li><a href="https://furusato.wowma.jp/guide/tax_return.php" rel="noopener" target="_blank">https://furusato.wowma.jp/guide/tax_return.php</a></li><li><a href="https://furusato.wowma.jp/guide/digital_certificate.php" rel="noopener" target="_blank">https://furusato.wowma.jp/guide/digital_certificate.php</a></li></ol>
+  </section>
+  
+  <p class="notice">この記事は 2026年11月14日 時点の制度・公表資料・各社公式サイトの記載に基づいています。金額や期限、手続きの流れは変わることがあるため、手続きの前に出典の公式サイトで最新の内容をご確認ください。特定の金融商品や個別の判断をすすめるものではありません。</p>
+
+  <div class="author">
+    <img src="/brand/icon-192.png" alt="" width="40" height="40">
+    <p><strong>家計と制度のメモ 編集部（株式会社B）</strong>家計に関わる制度の「手続き・期限・落とし穴」を、一次情報にもとづいて整理しています。<a href="/about/">運営者情報</a></p>
+  </div>
+  <div class="share">
+    <a href="https://twitter.com/intent/tweet?url=https%3A//kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/&text=%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E7%B4%8D%E7%A8%8E%E3%82%92%E7%A2%BA%E5%AE%9A%E7%94%B3%E5%91%8A%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86%EF%BC%88%E8%A8%BC%E6%98%8E%E6%9B%B8%20XML%20%E3%81%A8%20e-Tax%EF%BC%89" rel="noopener" target="_blank">X で共有</a>
+    <a href="https://social-plugins.line.me/lineit/share?url=https%3A//kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/" rel="noopener" target="_blank">LINE で送る</a>
+    <a href="https://b.hatena.ne.jp/entry/kakei-seido.com/guides/furusato-kakutei-shinkoku-etax-shoumeisho/" rel="noopener" target="_blank">はてなブックマーク</a>
+  </div>
+</article>
+
+<nav class="pager" aria-label="前後の記事">
+  <a href="/posts/2026-11-14-kouza-kaisetsu-go-5steps/"><span class="dir">← 新しい記事</span>証券口座、開設後から初回買付までの 5 ステップ</a>
+  <a class="next" href="/posts/2026-11-13-nencho-demo-kakutei-5case/"><span class="dir">古い記事 →</span>年末調整をしても確定申告が必要な 5 ケース</a>
+</nav>
+
+
+<section class="related">
+  <h2 class="sec-title">あわせて読みたい<a href="/topics/furusato/">ふるさと納税の記事一覧 →</a></h2>
+  <ul class="grid">
+    
+    <li><a class="post-card" href="/guides/furusato-koujo-jougen-gensenchoushuhyou/">
+      <span class="thumb thumb-text"><span class="thumb-label"><span>GUIDE</span>ふるさと納税</span></span>
+      <span class="card-copy">
+        <span class="meta"><span class="chip type-tejun">手続き</span><time datetime="2026-11-13T19:30:00+09:00">2026年11月13日</time></span>
+        <span class="title">ふるさと納税の控除上限を源泉徴収票から確認する手順</span>
+        <span class="excerpt">ふるさと納税で自己負担 2,000 円に収まる上限は、年収と家族構成、ほかの控除で決まります。源泉徴収票のどの欄を見るか、早見表の目安、詳細シミュレーションの入力と注意点を公式の記載で整理しました。</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/guides/furusato-onestop-online-shinsei/">
+      <span class="thumb thumb-text"><span class="thumb-label"><span>GUIDE</span>ふるさと納税</span></span>
+      <span class="card-copy">
+        <span class="meta"><span class="chip type-tejun">手続き</span><time datetime="2026-11-11T19:30:00+09:00">2026年11月11日</time></span>
+        <span class="title">ワンストップ特例をオンラインで申請する手順（マイナンバーカードとスマホ）</span>
+        <span class="excerpt">ワンストップ特例は、対応自治体ならマイナンバーカードとスマートフォンでオンライン申請できます。使える条件、必要なもの、対応自治体の見分け方、郵送で申請する場合の書類、1 月 10 日の期限と注意点を公式ガイドの記載で整理しました。</span>
+      </span>
+    </a></li>
+    
+    <li><a class="post-card" href="/guides/furusato-nennai-kigen-dandori/">
+      <span class="thumb thumb-text"><span class="thumb-label"><span>GUIDE</span>ふるさと納税</span></span>
+      <span class="card-copy">
+        <span class="meta"><span class="chip type-sonsuru">知らないと損</span><time datetime="2026-11-11T12:30:00+09:00">2026年11月11日</time></span>
+        <span class="title">ふるさと納税の 3 つの期限：12/31 の決済完了と 1/10 必着の段取り</span>
+        <span class="excerpt">ふるさと納税の期限は 3 つ。寄附は 12 月 31 日 23:59 の決済完了、ワンストップ特例は翌年 1 月 10 日必着、確定申告は翌年 3 月 15 日。12 月の逆算スケジュールと期限を過ぎたときの対応を整理しました。</span>
+      </span>
+    </a></li>
+    
+  </ul>
+</section>
+
+</div>
+  
+  <aside class="sidebar" aria-label="記事を探す・このサイトについて">
+    
+<nav class="box reading-nav" aria-label="この記事の目次">
+  <p class="kicker">IN THIS GUIDE</p><h2>この記事の内容</h2>
+  <ol><li><a href="#g1">確定申告が必要になる人：6 団体以上、ほかの理由で申告する人</a></li><li><a href="#g2">書類は 2 種類：自治体の受領証明書と、特定事業者の「寄附金控除に関する証明書」</a></li><li><a href="#g3">証明書 XML の取得：マイページの寄附履歴から発行する</a></li><li><a href="#g4">方法 A：マイナポータル連携で作成コーナーに自動入力する</a></li><li><a href="#g5">方法 B：XML を作成コーナーで読み込む／受領証明書を手入力する</a></li><li><a href="#g6">申告期限と、過ぎてしまったとき</a></li></ol>
+  <a class="source-link" href="#sources">出典を確認する ↓</a>
+</nav>
+
+    
+    <section class="box">
+      <p class="kicker">TOPICS</p><h2>制度から探す</h2>
+      <ul class="topic-menu"><li><a href="/topics/furusato/">ふるさと納税<span>14 →</span></a></li><li><a href="/topics/nencho/">年末調整・確定申告<span>5 →</span></a></li><li><a href="/topics/ideco/">iDeCo<span>7 →</span></a></li><li><a href="/topics/nisa/">新NISA・証券口座<span>21 →</span></a></li></ul>
+    </section>
+    
+    
+    <section class="box">
+      <p class="kicker">LATEST</p><h2>新着のメモ</h2>
+      <ul class="mini">
+        
+        <li><a href="/posts/2026-11-14-kouza-kaisetsu-go-5steps/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-14-kouza-kaisetsu-go-5steps/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">証券口座、開設後から初回買付までの 5 ステップ</span><span class="meta"><time datetime="2026-11-14T07:30:00+09:00">2026年11月14日</time></span></span></a></li>
+        
+        <li><a href="/guides/furusato-kakutei-shinkoku-etax-shoumeisho/"><span class="thumb thumb-text"><span class="thumb-label"><span>GUIDE</span>ふるさと納税</span></span><span><span class="title">ふるさと納税を確定申告する手順（証明書 XML と e-Tax）</span><span class="meta"><time datetime="2026-11-14T07:00:00+09:00">2026年11月14日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-13-nencho-demo-kakutei-5case/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-13-nencho-demo-kakutei-5case/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">年末調整をしても確定申告が必要な 5 ケース</span><span class="meta"><time datetime="2026-11-13T19:30:00+09:00">2026年11月13日</time></span></span></a></li>
+        
+        <li><a href="/guides/furusato-koujo-jougen-gensenchoushuhyou/"><span class="thumb thumb-text"><span class="thumb-label"><span>GUIDE</span>ふるさと納税</span></span><span><span class="title">ふるさと納税の控除上限を源泉徴収票から確認する手順</span><span class="meta"><time datetime="2026-11-13T19:30:00+09:00">2026年11月13日</time></span></span></a></li>
+        
+        <li><a href="/posts/2026-11-13-ideco-tesuryo-son3/"><span class="thumb"><img src="https://kakei-seido.com/posts/2026-11-13-ideco-tesuryo-son3/01.png" alt="" loading="lazy" width="1080" height="1350"></span><span><span class="title">iDeCo、知らないと損する手数料 3 つ</span><span class="meta"><time datetime="2026-11-13T12:30:00+09:00">2026年11月13日</time></span></span></a></li>
+        
+      </ul>
+    </section>
+    
+    <section class="box editor-note">
+      <p class="kicker">OUR NOTE</p><h2>出典を、確かめられるように。</h2>
+      <p>新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。制度の数字・期限は金融庁・国税庁・総務省などの一次情報にもとづき、各記事に出典を示しています。</p>
+      <p><a href="/about/">運営者情報・広告の方針 →</a></p>
+    </section>
+    
+    <section class="cta-box">
+      <p class="kicker">はじめの一歩</p>
+      <p>手続きの記事を読んだら、口座開設から。</p>
+      <p class="ad-name"><span class="pr">PR</span>証券口座を開く（松井証券）</p>
+<div class="ad-official"><a href="https://px.a8.net/svt/ejp?a8mat=4BGAV2+E51NRU+3XCC+64C3M" rel="nofollow sponsored noopener" referrerpolicy="no-referrer-when-downgrade" target="_blank">松井証券</a>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BGAV2+E51NRU+3XCC+64C3M" alt=""></div>
+      <p class="fine">広告（PR）です。条件・手数料は各公式サイトでご確認ください。</p>
+    </section>
+    
+  </aside>
+  
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-intro">
+      <h2 class="footer-brand">家計と制度のメモ</h2>
+      <p>新NISA・こどもNISA・ふるさと納税の「手続き」だけをわかりやすく。Instagram / Threads に投稿した内容を、記事としても読めるようにしています。</p>
+      <p>当ページのリンクには広告（PR）が含まれます。制度の内容は各公式サイトで最新情報をご確認ください。</p>
+    </div>
+    <div><h2>トピック</h2><ul><li><a href="/topics/furusato/">ふるさと納税</a></li><li><a href="/topics/nencho/">年末調整・確定申告</a></li><li><a href="/topics/ideco/">iDeCo</a></li><li><a href="/topics/nisa/">新NISA・証券口座</a></li><li><a href="/posts/">記事一覧</a></li></ul></div>
+    <div><h2>サイト情報</h2><ul><li><a href="/about/">運営者情報</a></li><li><a href="/about/#pr">広告（PR）について</a></li><li><a href="/about/#disclaimer">免責事項</a></li><li><a href="/">Instagram のリンク集</a></li></ul></div>
+    <p class="copy">© 2026 株式会社B　最終更新: 2026-11-14</p>
+  </div>
+</footer>
+</body>
+</html>
